@@ -1,14 +1,72 @@
 .hero{
-    height: 100vh;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),url('../../assets/images/hero_image.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+.hero_description h1{
+    font-size: 2.563rem;
+    line-height: 3.076rem;
+}
+
+.hero_description h6{
+    line-height: 2rem;
+}
+
+.trending_categories p, .hero_description h6, .more_about_us > div > p, .expore_courses p,
+.tutor >div >p
+{
+    font-size: 1.313rem;
+}
+
+.hero_description button{
+    font-weight: bold;
+}
 
 .more_about_us > h4 > span, .hero_description>h1>span{
     color: var(--primary-color);
+}
+
+.trending_categories h4, .more_about_us h4, .expore_courses h4,
+.tutor > div > h4
+{
+    font-size: 2.5rem !important;
+}
+
+.trending_categories p{
+    line-height: 1.5rem;
+}
+
+.category_icon{
+    width: 9rem;
+    height: 9rem;
+}
+
+.performance_metrics > div > p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.logos{
+    background-color: var(--dark-blue);
+}
+
+.more_about_us button{
+    font-size: 0.9rem;
+    line-height: 1.125rem;
+}
+
+.expore_courses p{
+    line-height: 1.688rem;
+}
+
+.tutor{
+    width: 72rem;
+}
+
+.tutor > div > p{
+    line-height: 1.8rem;
 }
 
 .nav-link{

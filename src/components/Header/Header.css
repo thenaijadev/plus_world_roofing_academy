@@ -1,5 +1,5 @@
-nav p, nav li, nav button{
-    font-size: 0.938rem;
+nav p, nav li a, nav button, input::placeholder{
+    font-size: 0.83rem;
     line-height: 18px;
 }
 
@@ -10,6 +10,7 @@ ul > li{
 ul >li>a{
     text-decoration: none;
     color: var(--black);
+
 }
 
 .badge_icon{
@@ -19,3 +20,4 @@ ul >li>a{
 input{
     border: none !important;
 }
+

@@ -1,5 +1,5 @@
 .card{
-    width: 19.75rem !important;
+    width: 17rem !important;
 }
 
 .card p{
@@ -11,8 +11,8 @@
     line-height: 1.688rem;
 }
 
-.enroll > button, .card p{
-    font-size: 0.938rem;
+.enroll > button, .card p, .card-body p{
+    font-size: 0.9rem;
 }
 
 

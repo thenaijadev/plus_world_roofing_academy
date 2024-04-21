@@ -37,57 +37,57 @@ const HomePage = () => {
           <div className="hero_description w-50 ps-5">
             <h1 className="mb-4">Never Stop <span>Learning!</span> <br />Launch a new long term career with us.</h1>
             <h6 className="mb-4">Every teaching and learning journey is unique and <br /> we will help you find your way</h6>
-            <IconButton title="Explore careers" image={ArrowFowardSmall}/>
+            <IconButton  title="Explore careers" image={ArrowFowardSmall}/>
           </div>
         </section>
-        <section className="px-5 pt-5 my-5">
-          <div className="text-center ">
+        <section className="px-5  my-5">
+          <div className="text-center trending_categories">
             <MyBadge name="Trending Categories" />
-            <h4 className=" my-3">Top Category Available</h4>
-            <p>Get professional-level training and earn a credential recognized by leading companies.</p>
+            <h4 className="my-2">Top Category Available</h4>
+            <p className="fw-medium">Get professional-level training and earn a credential recognized by leading companies.</p>
           </div>
-          <div className="performance_metrics m-auto py-2 rounded-pill d-flex align-items-center justify-content-between mx-5 px-5">
+          <div className="performance_metrics m-auto py-4 rounded-pill d-flex align-items-center justify-content-between px-5">
             <ArrowLeftCircular/>
-              <div className="fw-bold px-4 text-center ">
-                <div className="category_icon rounded-circle p-3 mb-3">
+              <div className=" px-4 text-center ">
+                <div className="category_icon d-flex align-items-center justify-content-center rounded-circle mb-1">
                   <img src={RealEstateOffice} alt="real estate office" />
                 </div>
-                <p className="mb-0">Real Estate</p>
-                <p className="mb-0">(22)</p>
+                <p className="mb-0 fw-bold">Real Estate</p>
+                <p className="mb-0 fw-medium">(22)</p>
               </div>
-              <div className="fw-bold px-4 text-center d-flex flex-column ">
-                <div className="category_icon rounded-circle p-3 mb-3">
+              <div className="px-4 text-center d-flex flex-column ">
+                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
                   <img src={ConstructionHat} alt="contruction hat" />
                 </div>
-                <p className="mb-0">Construction</p>
-                <p className="mb-0">(40)</p>
+                <p className="mb-0 fw-bold ">Construction</p>
+                <p className="mb-0 fw-medium">(40)</p>
               </div>
-              <div className="fw-bold px-4 text-center ">
-                <div className="category_icon rounded-circle p-4 mb-3">
+              <div className=" px-4 text-center ">
+                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
                   <img src={FacilityManagement} alt="facility management" />
                 </div>
-                <p className="mb-0">Facility Management</p>
-                <p className="mb-0">(35)</p>
+                <p className="mb-0 fw-bold">Facility Management</p>
+                <p className="mb-0 fw-medium">(35)</p>
               </div>
-              <div className="fw-bold px-4 text-center ">
-                <div className="category_icon rounded-circle p-3 mb-3">
+              <div className="px-4 text-center ">
+                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
                   <img src={Tripod} alt="tripod" />
                 </div>
-                <p className="mb-0">Estate Surveyors</p>
-                <p className="mb-0">(10)</p>
+                <p className="mb-0 fw-bold ">Estate Surveyors</p>
+                <p className="mb-0 fw-medium">(10)</p>
               </div>
-              <div className="fw-bold px-4 text-center  ">
-                <div className="category_icon rounded-circle p-3 mb-3">
+              <div className="px-4 text-center  ">
+                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
                   <img src={RoofRepair} alt="roof repair" />
                 </div>
-                <p className="mb-0">Roofing Technology</p>
-                <p className="mb-0">(50)</p>
+                <p className="mb-0 fw-bold ">Roofing Technology</p>
+                <p className="mb-0 fw-medium">(50)</p>
               </div>
               <ArrowForwardCircular/>
             </div>
         </section>
         <section>
-          <div className="d-flex align-items-center justify-content-center overflow-x-hidden">
+          <div className="d-flex align-items-center justify-content-center w-100 logos overflow-x-hidden">
             <img src={Cousera} alt="cousera" />
             <img src={Amazon} alt="amazon" />
             <img src={CodeAcademy} alt="code academy" />
@@ -101,8 +101,8 @@ const HomePage = () => {
             <div className="px-3"><img src={EnrolledStudent} alt="enrolled student image" /></div>
             <div className="more_about_us px-3">
               <MyBadge name="Get More About Us"/>
-              <h4 className="my-3 ">Thousand of top <span>courses</span> <br />now in one place</h4>
-              <p className="mb-4">Learn creative skills to achieve your <br />personal and professional goals.</p>
+              <h4 className="my-1 ">Thousand of top <span>courses</span> <br />now in one place</h4>
+              <p className="mt-2 mb-4 fw-medium">Learn creative skills to achieve your <br />personal and professional goals.</p>
               <div className="d-flex gap-3 align-items-center mb-3">
                 <img src={ArrowRight} alt="arrow right" className="p-2 border-black border arrrow_right rounded-circle" />
                 <p className="mb-0 fw-bold">Tune in and level up at your own pace.</p>
@@ -120,10 +120,10 @@ const HomePage = () => {
           </div>
         </section>
         <section className="px-5 pt-5 my-5">
-          <div className="text-center mb-5">
+          <div className="text-center mb-5 expore_courses">
             <MyBadge name="Top Class Courses"/>
-            <h4>Explore our Best Courses</h4>
-            <p>Whatever your background or interests are, Professional Certificates have you covered.</p>
+            <h4 className="my-1">Explore our Best Courses</h4>
+            <p className="fw-medium">Whatever your background or interests are, Professional Certificates have you covered.</p>
           </div>
            <Nav tabs className='course-tabs w-50 d-flex px-4 m-auto  my-4'>
                 <NavItem className='cursor-pointer '>
@@ -174,16 +174,15 @@ const HomePage = () => {
                 </TabPane>
             </TabContent>
             
-
           <div >
-            <div className="d-flex align-items-center justify-content-between my-5 w-75 px-3 m-auto">
-              <div className="w-25">
+            <div className="tutor d-flex align-items-center justify-content-between my-5 px-2 m-auto">
+              <div >
                 <Badge className="text-black mb-2" pill>Our Tutors</Badge>
-                <h4 className="mb-4 fs-3">Learn from creative experts </h4>
-                <p className="mb-4">classes are taught by industry leaders excited to share their tools, techniques, and professional journeys with you.</p>
+                <h4 className="mb-4 fs-3">Learn from <br /> creative experts </h4>
+                <p className="mb-4">classes are taught by industry <br /> leaders excited to share their tools, techniques, and professional journeys with you.</p>
                 <IconButton title="See All Instructors" image={ArrowFowardSmall}/>
               </div>
-              <div className="w-75 d-flex flex-wrap align-items-center justify-content-around">
+              <div className="d-flex flex-wrap align-items-center justify-content-around">
                 <ExpertAvatarCard avatar={OliviaMiaAvatar} name="Olivia Mia" title="Roofing Design" reviews="(4.8 Reviews)"/>
                 <ExpertAvatarCard avatar={OliviaMiaAvatar} name="Olivia Mia" title="Roofing Design" reviews="(4.8 Reviews)"/>
                 <ExpertAvatarCard avatar={OliviaMiaAvatar} name="Olivia Mia" title="Roofing Design" reviews="(4.8 Reviews)"/>
