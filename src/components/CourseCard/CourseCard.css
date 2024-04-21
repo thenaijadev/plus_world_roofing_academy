@@ -1,0 +1,26 @@
+.card{
+    width: 19.75rem !important;
+}
+
+.card p{
+    line-height: 1.125rem;
+}
+
+.card h5{
+    font-size: 1.313rem;
+    line-height: 1.688rem;
+}
+
+.enroll > button, .card p{
+    font-size: 0.938rem;
+}
+
+
+.roof_top_container{
+    height: 10.313rem;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/roof_top.svg');
+    object-fit: cover;   
+    background-position: center;
+    background-size: fill;
+}

@@ -1,0 +1,25 @@
+.footer{
+    background-color: var(--secondary-color) !important;
+}
+
+.footer > div > div:nth-child(1) >img{
+    width: 145px;
+    height: 44px;
+}
+
+footer > div > div> div > ul li{
+    list-style: none !important;
+}
+
+hr{
+    border: none;
+    width: 29px;
+    border-radius: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.subscribe button{
+    background-color: var(--primary-color);
+    font-weight: bold;
+
+}

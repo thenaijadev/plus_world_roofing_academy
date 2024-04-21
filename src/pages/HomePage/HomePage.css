@@ -1,0 +1,57 @@
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),url('../../assets/images/hero_image.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.more_about_us > h4 > span, .hero_description>h1>span{
+    color: var(--primary-color);
+}
+
+.nav-link{
+    color: black;
+}
+
+.course-tabs .active {
+    border-bottom: 3px solid var(--primary-color) !important;
+    border-inline: none;
+    border-top: none;
+    color: var(--primary-color) !important;
+}
+.course-tabs{
+    border-bottom: 3px solid var(--secondary-color) !important;
+}
+
+.testimonials{
+    height: 19.125rem;
+    background-color: var(--secondary-color);
+    margin-block: 6rem;
+}
+
+.testimonials >div{
+    top: -100px;
+}
+
+.stay_informed, .performance_metrics{
+    background-color: var(--secondary-color);
+}
+
+.stay_informed form>div>button, .see_insturctor_btn, .arrrow_right, .explore{
+    background-color: var(--primary-color);
+}
+
+.stay_informed button{
+    font-size: 1.125rem;
+}
+
+.badge,.stay_informed form>div>input, .category_icon{
+    background-color: var(--light-brown) !important;
+}
+
+.FAQ h2 > button{
+    font-weight: bold !important;
+    padding-inline: 0 !important;
+}
