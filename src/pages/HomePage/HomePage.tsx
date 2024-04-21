@@ -24,7 +24,7 @@ const HomePage = () => {
     const [open, setOpen] = useState('');
   const toggleAccordion = (id: SetStateAction<string>) => {
     if (open === id) {
-      setOpen();
+      setOpen(id);
     } else {
       setOpen(id);
     }
