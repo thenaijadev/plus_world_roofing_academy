@@ -210,14 +210,15 @@ const HomePage = () => {
           </div>
         </section>
         <section className=" pt-5 my-5">
-          <div className="text-center">
-            <h4 className="mb-3 fw-bold">Why Students Love <br />Plusworld Roofing Academy</h4>
+          <div className="text-center testimonial_heading">
+            <h4 className="mb-0 fw-bold">Why Students Love </h4>
+            <h4 className="mb-3 fw-bold">Plusworld Roofing Academy</h4>
             <p>Skillshare is here to support you on every step of your creative journey.</p>
           </div>
 
           <div className="testimonials z-n1  position-relative">
             <div className="d-flex align-items-center  px-5 justify-content-around z-3 position-absolute">
-              <ArrowLeftCircular/>
+              <div><ArrowLeftCircular/></div>
               <div className="d-flex align-items-center">
                 <div>
                   <img src={TestimonialImage} alt="testimonial image" />
@@ -227,7 +228,7 @@ const HomePage = () => {
                   <p>—Jason R, Plusworld student</p>
                 </div>
               </div>
-              <ArrowForwardCircular/>
+              <div><ArrowForwardCircular/></div>
             </div>
           </div>
           
@@ -242,7 +243,7 @@ const HomePage = () => {
               <form action="">
                 <div className=" d-flex gap-1 ">
                   <input type="email" className="form-control px-3 w-75 border-0 rounded-pill" id="emailAddress" placeholder="Type your email"/>
-                  <button type="button" className="btn  rounded-pill">Subscribe Now</button>
+                  <button type="button" className="btn fw-medium rounded-pill">Subscribe Now</button>
                 </div>
               </form>
             </div>  

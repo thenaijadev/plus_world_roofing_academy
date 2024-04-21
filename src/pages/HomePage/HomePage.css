@@ -5,7 +5,7 @@
     background-size: cover;
 }
 
-.hero_description h1{
+.hero_description h1, .hero_description h1>span{
     font-size: 2.563rem;
     line-height: 3.076rem;
 }
@@ -15,7 +15,7 @@
 }
 
 .trending_categories p, .hero_description h6, .more_about_us > div > p, .expore_courses p,
-.tutor >div >p
+.tutor >div >p, .testimonial_heading p
 {
     font-size: 1.313rem;
 }
@@ -24,12 +24,13 @@
     font-weight: bold;
 }
 
-.more_about_us > h4 > span, .hero_description>h1>span{
+.more_about_us > h4 > span, .hero_description>h1>span, .stay_informed >div >div>h4>span{
     color: var(--primary-color);
 }
 
-.trending_categories h4, .more_about_us h4, .expore_courses h4,
-.tutor > div > h4
+.trending_categories h4, .more_about_us h4, .more_about_us > h4 > span, .expore_courses h4,
+.tutor > div > h4, .testimonial_heading h4, .stay_informed >div >div>h4, .stay_informed >div >div>h4>span,
+.FAQ >div>div>h4
 {
     font-size: 2.5rem !important;
 }
@@ -103,6 +104,10 @@
 
 .stay_informed button{
     font-size: 1.125rem;
+}
+
+.stay_informed button:hover{
+    background-color: var(--primary-color);
 }
 
 .badge,.stay_informed form>div>input, .category_icon{
