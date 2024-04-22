@@ -1,0 +1,17 @@
+.custom-prev-btn,
+.custom-next-btn {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  border: none;
+  z-index: 5;
+  background-color: rgba(17, 17, 17, 0);
+}
+
+.custom-prev-btn {
+  left: 5px; 
+}
+
+.custom-next-btn {
+  right: 5px; 
+}
