@@ -2,13 +2,17 @@
     background-color: var(--secondary-color) !important;
 }
 
-.footer > div > div:nth-child(1) >img{
-    width: 145px;
-    height: 44px;
-}
-
 footer > div > div> div > ul li{
     list-style: none !important;
+}
+
+.address_container p, footer > div > div> div > ul li, footer h5{
+    font-size: 1.313rem;
+    line-height: 1.688rem;
+}
+
+input::placeholder{
+    font-size: 1.125rem;
 }
 
 hr{
@@ -21,5 +25,12 @@ hr{
 .subscribe button{
     background-color: var(--primary-color);
     font-weight: bold;
+}
 
+.subscribe button:hover{
+    background-color: var(--primary-color);
+}
+
+.logo{
+    width: 9rem;
 }

@@ -1,6 +1,6 @@
 nav p, nav li a, nav button, input::placeholder{
-    font-size: 0.83rem;
-    line-height: 18px;
+    font-size: 0.83rem !important;
+    line-height: 1.125rem ;
 }
 
 ul > li{

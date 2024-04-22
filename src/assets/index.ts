@@ -31,6 +31,14 @@ import FacebookLogo from "./images/facebook_logo.svg";
 import InstagramLogo from "./images/instagram_logo.svg";
 import LinkedInLogo from "./images/linkedin_logo.svg";
 import TwitterLogo from "./images/twitter_logo.svg";
+import GooglePlay from "./images/google_play.svg";
+import AppleStore from "./images/apple_store.svg";
+import YouTube from "./images/youtube.svg";
+import Twitter from "./images/twitter.svg";
+import Facebook from "./images/facebook.svg";
+import LinkedIn from "./images/linkedin.svg";
+import Instagram from "./images/instagram.svg";
+
 
 
 
@@ -67,5 +75,12 @@ export {
     LinkedInLogo,
     FacebookLogo,
     TwitterLogo,
-    InstagramLogo
+    InstagramLogo,
+    GooglePlay,
+    AppleStore,
+    Instagram,
+    YouTube,
+    LinkedIn,
+    Twitter,
+    Facebook
 };

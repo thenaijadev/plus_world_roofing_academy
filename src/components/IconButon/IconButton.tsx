@@ -1,4 +1,5 @@
 import { Button } from 'reactstrap'
+import './IconButton.css'
 
 type Props = {
     title: string,
