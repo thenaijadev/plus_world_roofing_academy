@@ -201,7 +201,6 @@ const HomePage = () => {
                 <div className=" d-flex gap-1 ">
                   <input type="email" className="form-control px-3 w-75 border-0 rounded-pill" id="emailAddress" placeholder="Type your email"/>
                   <button type="button" className="btn fw-medium rounded-pill">Subscribe Now</button>
-                  <button type="button" className="btn fw-medium rounded-pill">Subscribe Now</button>
                 </div>
               </form>
             </div>  
