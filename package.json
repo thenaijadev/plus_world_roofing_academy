@@ -15,14 +15,17 @@
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
-    "reactstrap": "^9.2.2"
+    "react-swiper": "^0.1.5",
+    "reactstrap": "^9.2.2",
+    "swiper": "^11.1.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",

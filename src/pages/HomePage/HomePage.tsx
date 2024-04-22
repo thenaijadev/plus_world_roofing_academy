@@ -1,7 +1,7 @@
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem, Badge, Nav, NavItem, NavLink, TabContent, TabPane, } from "reactstrap"
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
-import { AMD, Amazon, ArrowFowardSmall, ArrowRight, CodeAcademy, Cognizant, ConstructionHat, Cousera, EnrolledStudent, FAQsImage, FacilityManagement, OliviaMiaAvatar, RealEstateOffice, RoofRepair, StayInformedImage, TestimonialImage, Tripod, Udemy } from "../../assets"
+import { AMD, Amazon, ArrowFowardSmall, ArrowRight, CodeAcademy, Cognizant, Cousera, EnrolledStudent, FAQsImage, OliviaMiaAvatar, StayInformedImage, Udemy } from "../../assets"
 import './HomePage.css'
 import ExpertAvatarCard from "../../components/ExpertAvatarCard/ExpertAvatarCard"
 import IconButton from "../../components/IconButon/IconButton"
@@ -10,8 +10,8 @@ import AllCourse from "./components/AllCourse"
 import classnames from "classnames"
 import MyBadge from "../../components/MyBadge/MyBadge"
 import MyButton from "../../components/MyButton/MyButton"
-import ArrowForwardCircular from "../../components/ArrowForwardCircular/ArrowForwardCircular"
-import ArrowLeftCircular from "../../components/ArrowLeftCircular/ArrowLeftCircular"
+import TopCategory from "./components/TopCategory/TopCategory"
+import Testimonial from "./components/Testimonials/Testimonials"
 
 
 const HomePage = () => {
@@ -46,44 +46,12 @@ const HomePage = () => {
             <h4 className="my-2">Top Category Available</h4>
             <p className="fw-medium">Get professional-level training and earn a credential recognized by leading companies.</p>
           </div>
-          <div className="performance_metrics m-auto py-4 rounded-pill d-flex align-items-center justify-content-between px-5">
-            <ArrowLeftCircular/>
-              <div className=" px-4 text-center ">
-                <div className="category_icon d-flex align-items-center justify-content-center rounded-circle mb-1">
-                  <img src={RealEstateOffice} alt="real estate office" />
-                </div>
-                <p className="mb-0 fw-bold">Real Estate</p>
-                <p className="mb-0 fw-medium">(22)</p>
-              </div>
-              <div className="px-4 text-center d-flex flex-column ">
-                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
-                  <img src={ConstructionHat} alt="contruction hat" />
-                </div>
-                <p className="mb-0 fw-bold ">Construction</p>
-                <p className="mb-0 fw-medium">(40)</p>
-              </div>
-              <div className=" px-4 text-center ">
-                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
-                  <img src={FacilityManagement} alt="facility management" />
-                </div>
-                <p className="mb-0 fw-bold">Facility Management</p>
-                <p className="mb-0 fw-medium">(35)</p>
-              </div>
-              <div className="px-4 text-center ">
-                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
-                  <img src={Tripod} alt="tripod" />
-                </div>
-                <p className="mb-0 fw-bold ">Estate Surveyors</p>
-                <p className="mb-0 fw-medium">(10)</p>
-              </div>
-              <div className="px-4 text-center  ">
-                <div className="category_icon rounded-circle d-flex align-items-center justify-content-center mb-1">
-                  <img src={RoofRepair} alt="roof repair" />
-                </div>
-                <p className="mb-0 fw-bold ">Roofing Technology</p>
-                <p className="mb-0 fw-medium">(50)</p>
-              </div>
-              <ArrowForwardCircular/>
+          <div >
+             
+  
+    <TopCategory/>        
+              
+             
             </div>
         </section>
         <section>
@@ -215,20 +183,8 @@ const HomePage = () => {
             <p>Skillshare is here to support you on every step of your creative journey.</p>
           </div>
 
-          <div className="testimonials z-n1  position-relative">
-            <div className="d-flex align-items-center  px-5 justify-content-around z-3 position-absolute">
-              <ArrowLeftCircular/>
-              <div className="d-flex align-items-center">
-                <div>
-                  <img src={TestimonialImage} alt="testimonial image" />
-                </div>
-                <div>
-                  <h5 className="mb-5">“I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.”</h5>
-                  <p>—Jason R, Plusworld student</p>
-                </div>
-              </div>
-              <ArrowForwardCircular/>
-            </div>
+          <div className="testimonials z-n1">
+            <Testimonial/>
           </div>
           
         </section>

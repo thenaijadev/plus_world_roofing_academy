@@ -1,17 +1,25 @@
-import ArrowForwardCircular from '../../../components/ArrowForwardCircular/ArrowForwardCircular'
-import ArrowLeftCircular from '../../../components/ArrowLeftCircular/ArrowLeftCircular'
+import { Swiper} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/bundle'
+import { Navigation} from 'swiper/modules';
 import CourseCard from '../../../components/CourseCard/CourseCard'
-
+import AllCourseData from '../../../components/CourseCard/CourseData'
+import { SwiperNavButtons } from '../../../components/SwiperNavButtons/SwiperNavButtons'
 const AllCourse = () => {
   return (
-    <div className="d-flex justify-content-around align-items-center gap-3 mb-5 m-auto">
-      <div><ArrowLeftCircular/></div>
-      <CourseCard title="Learning Roofing from Imagination" author="By Kelvin Mesh" amount="N15,000" review="(4.8 Reviews)"/>
-      <CourseCard title="Learning Roofing from Imagination" author="By Kelvin Mesh" amount="N15,000" review="(4.8 Reviews)"/>
-      <CourseCard title="Learning Roofing from Imagination" author="By Kelvin Mesh" amount="N15,000" review="(4.8 Reviews)"/>
-      <CourseCard title="Learning Roofing from Imagination" author="By Kelvin Mesh" amount="N15,000" review="(4.8 Reviews)"/>
-      <div><ArrowForwardCircular/></div>
-    </div>
+           <Swiper
+    spaceBetween={50} 
+    slidesPerView={5} 
+    loop={true}
+    modules={[Navigation]}
+    onSwiper={(swiper) => console.log(swiper)}
+    onSlideChange={() => console.log('slide change')}
+    className="d-flex justify-content-around align-items-center gap-3 mb-5 m-auto"
+    >
+      <SwiperNavButtons/>
+      {AllCourseData.map(CourseCard)}
+      
+    </Swiper>
   )
 }
 
