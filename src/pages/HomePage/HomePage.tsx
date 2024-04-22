@@ -181,6 +181,9 @@ const HomePage = () => {
           <div className="text-center testimonial_heading">
             <h4 className="mb-0 fw-bold">Why Students Love </h4>
             <h4 className="mb-3 fw-bold">Plusworld Roofing Academy</h4>
+          <div className="text-center testimonial_heading">
+            <h4 className="mb-0 fw-bold">Why Students Love </h4>
+            <h4 className="mb-3 fw-bold">Plusworld Roofing Academy</h4>
             <p>Skillshare is here to support you on every step of your creative journey.</p>
           </div>
 
@@ -199,6 +202,7 @@ const HomePage = () => {
               <form action="">
                 <div className=" d-flex gap-1 ">
                   <input type="email" className="form-control px-3 w-75 border-0 rounded-pill" id="emailAddress" placeholder="Type your email"/>
+                  <button type="button" className="btn fw-medium rounded-pill">Subscribe Now</button>
                   <button type="button" className="btn fw-medium rounded-pill">Subscribe Now</button>
                 </div>
               </form>
