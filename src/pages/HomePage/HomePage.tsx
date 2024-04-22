@@ -178,9 +178,7 @@ const HomePage = () => {
           </div>
         </section>
         <section className=" pt-5 my-5">
-          <div className="text-center testimonial_heading">
-            <h4 className="mb-0 fw-bold">Why Students Love </h4>
-            <h4 className="mb-3 fw-bold">Plusworld Roofing Academy</h4>
+      
           <div className="text-center testimonial_heading">
             <h4 className="mb-0 fw-bold">Why Students Love </h4>
             <h4 className="mb-3 fw-bold">Plusworld Roofing Academy</h4>
