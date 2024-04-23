@@ -15,3 +15,7 @@
 .custom-next-btn {
   right: 5px; 
 }
+
+.custom-prev-btn:hover, .custom-next-btn:hover{
+  border-radius: 50%;
+}
