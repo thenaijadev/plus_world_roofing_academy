@@ -11,7 +11,27 @@ interface TestimonialTypes {
       personImg: TestimonialImage,
       name: '—Jason R, Plusworld student',
       reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
-    }
+    }, {
+      personImg: TestimonialImage,
+      name: '—Jason R, Plusworld student',
+      reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
+    }, {
+      personImg: TestimonialImage,
+      name: '—Jason R, Plusworld student',
+      reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
+    }, {
+      personImg: TestimonialImage,
+      name: '—Jason R, Plusworld student',
+      reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
+    }, {
+      personImg: TestimonialImage,
+      name: '—Jason R, Plusworld student',
+      reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
+    }, {
+      personImg: TestimonialImage,
+      name: '—Jason R, Plusworld student',
+      reason: `I come to Plusworld Roofing Academy for the  curation and class quality. That's really worth the cost of membership to me.`
+    },
 ]
 
 export default TestimonialData

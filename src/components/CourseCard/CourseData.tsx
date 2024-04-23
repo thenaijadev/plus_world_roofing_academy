@@ -27,6 +27,16 @@ interface AllCourseDataTypes {
         author: 'By Kelvin Mesh',
         amount: 15000,
         review: 4.8
+      }, {
+        title: "Learning Roofing From Imagination",
+        author: 'By Kelvin Mesh',
+        amount: 15000,
+        review: 4.8
+      }, {
+        title: "Learning Roofing From Imagination",
+        author: 'By Kelvin Mesh',
+        amount: 15000,
+        review: 4.8
       },
    
 ]
