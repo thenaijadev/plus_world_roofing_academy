@@ -1,21 +1,22 @@
 .custom-prev-btn,
 .custom-next-btn {
-  position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   border: none;
   z-index: 5;
   background-color: rgba(17, 17, 17, 0);
 }
 
 .custom-prev-btn {
-  left: 5px; 
+  left: 5px;
 }
 
 .custom-next-btn {
-  right: 5px; 
+  right: 5px;
 }
 
-.custom-prev-btn:hover, .custom-next-btn:hover{
+.custom-prev-btn:hover,
+.custom-next-btn:hover {
   border-radius: 50%;
 }
