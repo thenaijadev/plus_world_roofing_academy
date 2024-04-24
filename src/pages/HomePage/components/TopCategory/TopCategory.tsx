@@ -30,7 +30,7 @@ function TopCategory() {
   return (
     <Swiper
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={4}
       loop={true}
       modules={[Navigation]}
       onSwiper={(swiper) => console.log(swiper)}

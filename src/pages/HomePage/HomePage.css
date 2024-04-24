@@ -1,120 +1,146 @@
-.hero{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),url('../../assets/images/hero_image.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../../assets/images/hero_image.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.hero_description h1, .hero_description h1>span{
-    font-size: 2.563rem;
-    line-height: 3.076rem;
+.hero_description h1,
+.hero_description h1 > span {
+  font-size: 2.563rem;
+  line-height: 3.076rem;
 }
 
-.hero_description h6{
-    line-height: 2rem;
+.hero_description h6 {
+  line-height: 2rem;
 }
 
-.trending_categories p, .hero_description h6, .more_about_us > div > p, .expore_courses p,
-.tutor >div >p, .testimonial_heading p
-{
-    font-size: 1.313rem;
+.trending_categories p,
+.hero_description h6,
+.more_about_us > div > p,
+.expore_courses p,
+.tutor > div > p,
+.testimonial_heading p {
+  font-size: 1.313rem;
 }
 
-.hero_description button{
-    font-weight: bold;
+.hero_description button {
+  font-weight: bold;
 }
 
-.more_about_us > h4 > span, .hero_description>h1>span, .stay_informed >div >div>h4>span{
-    color: var(--primary-color);
+.more_about_us > h4 > span,
+.hero_description > h1 > span,
+.stay_informed > div > div > h4 > span {
+  color: var(--primary-color);
 }
 
-.trending_categories h4, .more_about_us h4, .more_about_us > h4 > span, .expore_courses h4,
-.tutor > div > h4, .testimonial_heading h4, .stay_informed >div >div>h4, .stay_informed >div >div>h4>span,
-.FAQ >div>div>h4
-{
-    font-size: 2.5rem !important;
+.trending_categories h4,
+.more_about_us h4,
+.more_about_us > h4 > span,
+.expore_courses h4,
+.tutor > div > h4,
+.testimonial_heading h4,
+.stay_informed > div > div > h4,
+.stay_informed > div > div > h4 > span,
+.FAQ > div > div > h4 {
+  font-size: 2.5rem !important;
 }
 
-.trending_categories p{
-    line-height: 1.5rem;
+.trending_categories p {
+  line-height: 1.5rem;
 }
 
-.category_icon{
-    width: 9rem;
-    height: 9rem;
+.category_icon {
+  width: 9rem;
+  height: 9rem;
 }
 
-.performance_metrics > div > p{
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+.performance_metrics > div > p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
-.logos{
-    background-color: var(--dark-blue);
+.logos {
+  background-color: var(--dark-blue);
 }
 
-.more_about_us button{
-    font-size: 0.9rem;
-    line-height: 1.125rem;
+.more_about_us button {
+  font-size: 0.9rem;
+  line-height: 1.125rem;
 }
 
-.expore_courses p{
-    line-height: 1.688rem;
+.expore_courses p {
+  line-height: 1.688rem;
 }
 
-.tutor{
-    width: 72rem;
+.tutor {
+  width: 72rem;
 }
 
-.tutor > div > p{
-    line-height: 1.8rem;
+.tutor > div > p {
+  line-height: 1.8rem;
 }
 
-.nav-link{
-    color: black;
+.nav-link {
+  color: black;
 }
 
 .course-tabs .active {
-    border-bottom: 3px solid var(--primary-color) !important;
-    border-inline: none;
-    border-top: none;
-    color: var(--primary-color) !important;
+  border-bottom: 3px solid var(--primary-color) !important;
+  border-inline: none;
+  border-top: none;
+  color: var(--primary-color) !important;
 }
-.course-tabs{
-    border-bottom: 3px solid var(--secondary-color) !important;
-}
-
-.testimonials{
-    height: 19.125rem;
-    background-color: var(--secondary-color);
-    margin-block: 6rem;
+.course-tabs {
+  border-bottom: 3px solid var(--secondary-color) !important;
 }
 
-.testimonials >div{
-    top: -100px;
+.testimonials {
+  height: 19.125rem;
+  background-color: var(--secondary-color);
+  margin-block: 6rem;
 }
 
-.stay_informed, .performance_metrics{
-    background-color: var(--secondary-color);
+.testimonials > div {
+  top: -100px;
 }
 
-.stay_informed form>div>button, .see_insturctor_btn, .arrrow_right, .explore{
-    background-color: var(--primary-color);
+.stay_informed,
+.performance_metrics {
+  background-color: var(--secondary-color);
 }
 
-.stay_informed button{
-    font-size: 1.125rem;
+.stay_informed form > div > button,
+.see_insturctor_btn,
+.arrrow_right,
+.explore {
+  background-color: var(--primary-color);
 }
 
-.stay_informed button:hover{
-    background-color: var(--primary-color);
+.stay_informed button {
+  font-size: 1.125rem;
 }
 
-.badge,.stay_informed form>div>input, .category_icon{
-    background-color: var(--light-brown) !important;
+.stay_informed button:hover {
+  background-color: var(--primary-color);
 }
 
-.FAQ h2 > button{
-    font-weight: bold !important;
-    padding-inline: 0 !important;
+.badge,
+.stay_informed form > div > input,
+.category_icon {
+  background-color: var(--light-brown) !important;
+}
+
+.FAQ h2 > button {
+  font-weight: bold !important;
+  padding-inline: 0 !important;
+}
+
+.accordion-button:hover {
+  background-color: var(--neutral-color-f) !important;
 }
