@@ -18,12 +18,6 @@ const ExpertAvatarCard = (props: Props) => {
           <img src={Star} alt="star" />
           <span>{props.reviews}</span>
         </div>
-        {/* <div className='d-flex gap-2 align-items-center'>
-                      <img src={FacebookLogo} alt="facebook" />
-                      <img src={TwitterLogo} alt="twitter" />
-                      <img src={InstagramLogo} alt="instagram" />
-                      <img src={LinkedInLogo} alt="linkedin" />
-                    </div> */}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import {  ConstructionHat, FacilityManagement,  RealEstateOffice, RoofRepair,  Tripod} from "../../../../assets"
+import {  ConstructionHat, FacilityManagement,  RealEstateOffice, RoofRepair} from "../../../../assets"
 
 interface TopCategoryDataTypes {
     img: string;
@@ -20,10 +20,6 @@ interface TopCategoryDataTypes {
         img: FacilityManagement,
         type: 'Facility Management',
         amount: 35
-      },  {
-        img: Tripod,
-        type: 'Estate Surveyors',
-        amount: 10
       },
       {
         img: RoofRepair,
