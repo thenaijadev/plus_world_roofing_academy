@@ -29,7 +29,7 @@ const ComingSoon = (props: Props) => {
       <div className="coming-soon-container d-flex justify-content-center align-items-center">
           <div className='w-50 h-50 m-auto coming-soon-card text-center p-3 rounded-4 d-flex justify-content-center align-items-center flex-column'>
             <h1 className="coming-soon">Coming soon</h1>
-            <h6>This page will be redirected in {secondsRemaining} seconss</h6>
+            <h6>This page will be redirected in {secondsRemaining} seconds</h6>
           </div>
       </div>
     </div>
