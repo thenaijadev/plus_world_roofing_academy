@@ -21,21 +21,21 @@ const Footer = () => {
               +2348126708162 20 Ojomo royal <br /> plaza, Lekki-Epe{" "}
             </p>
             <p className="fw-medium">
-              plusworldacademy@gmail.com <br />
+              academy@plusworldroofing.com.ng <br />
               Expressway, Lagos-Nigeria.
             </p>
             <div className="d-flex align-items-center justify-content-between ms-0">
               <SocialIcon
                 link="https://www.instagram.com/plusworldacademy?igsh=am43cWxzbnoxdnpy"
-                imgage={Instagram}
+                image={Instagram}
               />
-              <SocialIcon link="" imgage={Twitter} />
+              <SocialIcon link="" image={Twitter} />
               <SocialIcon
                 link="https://www.linkedin.com/company/plusworld-roofing-academy/"
-                imgage={LinkedIn}
+                image={LinkedIn}
               />
-              <SocialIcon link="" imgage={Facebook} />
-              <SocialIcon link="" imgage={YouTube} />
+              <SocialIcon link="" image={Facebook} />
+              <SocialIcon link="" image={YouTube} />
             </div>
           </div>
           <div className="align-items-start">

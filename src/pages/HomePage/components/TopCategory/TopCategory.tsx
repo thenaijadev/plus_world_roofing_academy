@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "../../../../components/SwiperNavButtons/SwiperNavButtons";
 import TopCategoryData from "./TopCategoryData";
+import { NavLink } from "react-router-dom";
 
 function TopCategory() {
   interface TopCategoryDataTypes {
@@ -20,7 +21,9 @@ function TopCategory() {
           <div className="category_icon d-flex align-items-center justify-content-center rounded-circle mb-1">
             <img src={img} alt="real estate office" />
           </div>
-          <p className="mb-0 fw-bold">{type}</p>
+          <NavLink className='text-black text-decoration-none' to='coming-soon'>
+            <p className="mb-0 fw-bold">{type}</p>
+          </NavLink>
           <p className="mb-0 fw-medium">({amount})</p>
         </div>
       </SwiperSlide>

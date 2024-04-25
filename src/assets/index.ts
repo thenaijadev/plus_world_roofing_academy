@@ -38,11 +38,13 @@ import Twitter from "./images/twitter.svg";
 import Facebook from "./images/facebook.svg";
 import LinkedIn from "./images/linkedin.svg";
 import Instagram from "./images/instagram.svg";
+import ArrowUp from "./images/arrow_up.svg";
 
 
 
 
 export {
+    ArrowUp,
     HeroImage,
     Logo,
     FAQsImage,

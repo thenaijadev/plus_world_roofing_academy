@@ -13,7 +13,7 @@ interface TopCategoryDataTypes {
     },
     {
         img: ConstructionHat,
-        type: 'Construction',
+        type: 'Construction Business',
         amount: 40
       },
       {
@@ -27,7 +27,7 @@ interface TopCategoryDataTypes {
       },
       {
         img: RoofRepair,
-        type: 'Roofiing Technology',
+        type: 'Roofing Technology',
         amount: 50
       }
 ]

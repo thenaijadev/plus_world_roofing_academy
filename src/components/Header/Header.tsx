@@ -56,12 +56,12 @@ const Header = () => {
             <img src={CartIcon} alt="favourite icon" />
           </div>
         </div>
-        <li>
+        
           <NavLink className="fw-bold " to="login">
-            {" "}
+            
             <MyButton name="Login" />
           </NavLink>
-        </li>
+        
       </div>
     </nav>
   );

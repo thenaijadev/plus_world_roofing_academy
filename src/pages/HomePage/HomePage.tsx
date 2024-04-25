@@ -36,6 +36,8 @@ import AllCourse from "./components/AllCourse";
 import Testimonial from "./components/Testimonials/Testimonials";
 import TopCategory from "./components/TopCategory/TopCategory";
 import "./HomePage.css";
+import BackToTopIcon from "../../components/BackToTop/BackToTopIcon";
+
 
 const HomePage = () => {
   const [activeTab, setActiveTab] = useState("All_Courses");
@@ -54,8 +56,9 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <div id="main">
       <Header />
+      <BackToTopIcon/>
       <section className="hero p-5 ">
         <div className="hero_description w-50 ps-5">
           <h1 className="mb-4">
