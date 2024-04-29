@@ -17,14 +17,14 @@ interface TopCategoryDataTypes {
         amount: 10, 
       }
     },
-    {
-        img: ConstructionHat,
-        type: 'Construction',
-        amount: 40,
-        subCategory: {
+    // {
+    //     img: ConstructionHat,
+    //     type: 'Construction',
+    //     amount: 40,
+    //     subCategory: {
 
-        }
-      },
+    //     }
+    //   },
       {
         img: FacilityManagement,
         type: 'Facility Management',
@@ -33,7 +33,7 @@ interface TopCategoryDataTypes {
             
         }
       },  {
-        img: Tripod,
+        img: ConstructionHat,
         type: 'Construction Business',
         amount: 10, 
         subCategory: {

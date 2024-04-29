@@ -47,7 +47,7 @@ const Header = () => {
           </div>
         </div>
 
-        <p className="fw-bold mb-0">Teach on Plusworld Academy</p>
+        <p className="fw-bold mb-0">Be a tutor</p>
         <div className="d-flex gap-2">
           <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
             <img src={FavouriteIcon} alt="favourite icon" />
