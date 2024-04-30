@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useState, useContext } from "react";
 import {
   Accordion,
   AccordionBody,
@@ -36,8 +36,12 @@ import AllCourse from "./components/AllCourse";
 import Testimonial from "./components/Testimonials/Testimonials";
 import TopCategory from "./components/TopCategory/TopCategory";
 import "./HomePage.css";
+import BackToTopIcon from "../../components/BackToTop/BackToTopIcon";
+import TutorForm from "../TutorForm/TutorForm";
+import { GlobalContext } from "../../GlobalProvider";
 
 const HomePage = () => {
+  const { tutorFormDisplay} = useContext(GlobalContext);
   const [activeTab, setActiveTab] = useState("All_Courses");
 
   const toggle = (tab: SetStateAction<string>) => {
@@ -54,8 +58,10 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <div id="main">
       <Header />
+      {tutorFormDisplay ? <TutorForm/> : ""}
+      <BackToTopIcon/>
       <section className="hero p-5 ">
         <div className="hero_description w-50 ps-5">
           <h1 className="mb-4">

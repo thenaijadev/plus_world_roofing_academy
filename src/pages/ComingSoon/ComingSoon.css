@@ -1,0 +1,11 @@
+.coming-soon-container {
+    height: 100vh;
+}
+
+
+.coming-soon-card{
+    background-color: var(--secondary-color);
+    -moz-box-shadow: -6px 9px 33px 0px rgba(0,0,0,0.2);
+-webkit-box-shadow: -6px 9px 33px 0px rgba(0,0,0,0.2);
+box-shadow: -6px 9px 33px 0px rgba(0,0,0,0.2);
+}

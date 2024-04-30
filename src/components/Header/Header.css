@@ -23,3 +23,6 @@ ul > li > a {
 input {
   border: none !important;
 }
+.tutor-button{
+ cursor: pointer;
+}

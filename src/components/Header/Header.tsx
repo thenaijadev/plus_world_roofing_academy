@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Input } from "reactstrap";
 import {
@@ -10,8 +11,20 @@ import {
 } from "../../assets";
 import MyButton from "../MyButton/MyButton";
 import "./Header.css";
+import { GlobalContext } from "../../GlobalProvider";
 
 const Header = () => {
+  const { setTutorFormDisplay, tutorFormDisplay} = useContext(GlobalContext);
+ 
+  function handleTutorForm(){
+    if(tutorFormDisplay){
+      setTutorFormDisplay(false)
+    }
+    else{
+      setTutorFormDisplay(true)
+    }
+  }
+
   return (
     <nav className="d-flex px-5 py-3 justify-content-between gap-5 align-items-center">
       <div className="d-flex align-items-center">
@@ -47,7 +60,7 @@ const Header = () => {
           </div>
         </div>
 
-        <p className="fw-bold mb-0">Be a tutor</p>
+        <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>Be a Tutor</p>
         <div className="d-flex gap-2">
           <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
             <img src={FavouriteIcon} alt="favourite icon" />
@@ -56,12 +69,12 @@ const Header = () => {
             <img src={CartIcon} alt="favourite icon" />
           </div>
         </div>
-        <li>
+        
           <NavLink className="fw-bold " to="login">
-            {" "}
+            
             <MyButton name="Login" />
           </NavLink>
-        </li>
+        
       </div>
     </nav>
   );
