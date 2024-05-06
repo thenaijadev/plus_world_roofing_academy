@@ -1,0 +1,10 @@
+@media screen and (max-width: 427px) {
+    div > a > p, div>p{
+        font-size: 1rem !important;
+        line-height: 1.2rem !important;
+    }
+#main > section:nth-child(4) > div:nth-child(2)> div{
+        padding-inline: 0 !important;
+        background-color: var(--neutral-color-f) !important;
+    }
+}

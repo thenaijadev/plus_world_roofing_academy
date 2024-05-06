@@ -148,3 +148,81 @@
 .sw {
   transform: translateY(120px);
 }
+
+@media screen and (max-width: 427px) {
+  .hero_description{
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .category_icon {
+  width: 5rem;
+  height: 5rem;
+}
+  .category_icon > img{
+    width: 3rem;
+    height: 3rem;
+  }
+  .hero, section:nth-child(4),section:nth-child(6){
+    padding: 1rem !important;
+  }
+  .course-tabs{
+    width: 100% !important;
+  }
+  .more_about_us{
+    padding: 0 !important;
+  }
+   section:nth-child(6) > div > div:nth-child(1) > img{
+    width: 16rem;
+  }
+/*   
+  .more_about_us > h4{
+    text-align: center;
+  } */
+  section:nth-child(7){
+    padding: 1rem !important;
+  }
+
+  .tutor{
+    width: 100% !important;
+    padding: 0 !important;
+    
+    justify-content: space-between !important;
+    gap: 2rem !important;
+  }
+  .tutor > div{
+    justify-content: space-between !important;
+    gap: 1rem !important;
+  }
+  .performance_metrics{
+    width: 100% !important;
+    border-radius: 1rem !important;
+    gap: 0 !important;
+  }
+  .performance_metrics > div{
+    padding-inline: 0.5rem !important;
+    background-color: var(--secondary-color) !important;
+  }
+  .stay_informed{
+    padding: 1rem !important;
+  }
+  .stay_informed > div{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .stay_informed > div > div{
+    width: 100% !important;
+  }
+  .FAQ{
+    padding: 1rem !important;
+  }
+  .FAQ > div{
+    padding-inline: 0px !important;
+    margin-inline: 0px !important;
+  }
+  .FAQ > div > div{
+    width: 100% !important;
+  }
+  .FAQ > div >div:nth-child(2)>img{
+    display: none;
+  }
+}

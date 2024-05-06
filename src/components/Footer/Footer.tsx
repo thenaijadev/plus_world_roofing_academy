@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="footer ">
       <div className="py-2">
-        <div className="d-flex justify-content-around pt-5 pb-3 align-items-start  border-bottom mx-5 border-2">
+        <div className="d-flex gap-2 flex-column flex-md-row justify-content-around pt-5 pb-3 align-items-start  border-bottom mx-5 border-2">
           <div className="d-flex flex-column gap-4 address">
             <img src={Logo} alt="logo" className="logo" />
             <p className="mb-0 fw-medium">
@@ -38,24 +38,26 @@ const Footer = () => {
               <SocialIcon link="" image={YouTube} />
             </div>
           </div>
-          <div className="align-items-start">
-            <h5>Useful Links</h5>
-            <hr />
-            <ul className="ps-0">
-              <li className="mb-2 fw-medium">Careers</li>
-              <li className="mb-2 fw-medium">Blog</li>
-              <li className="mb-2 fw-medium">Help & Support</li>
-              <li className="fw-medium">Privacy policy</li>
-            </ul>
-          </div>
-          <div>
-            <h5>Our Company</h5>
-            <hr />
-            <ul className="ps-0">
-              <li className="mb-2 fw-medium">Contact Us</li>
-              <li className="mb-2 fw-medium">Be a Tutor</li>
-              <li className="fw-medium">Careers</li>
-            </ul>
+          <div className="d-flex gap-5 justify-content-between pb-3 ">
+            <div className="align-items-start">
+              <h5>Useful Links</h5>
+              <hr />
+              <ul className="ps-0">
+                <li className="mb-2 fw-medium">Careers</li>
+                <li className="mb-2 fw-medium">Blog</li>
+                <li className="mb-2 fw-medium">Help & Support</li>
+                <li className="fw-medium">Privacy policy</li>
+              </ul>
+            </div>
+            <div>
+              <h5>Our Company</h5>
+              <hr />
+              <ul className="ps-0">
+                <li className="mb-2 fw-medium">Contact Us</li>
+                <li className="mb-2 fw-medium">Be a Tutor</li>
+                <li className="fw-medium">Careers</li>
+              </ul>
+            </div>
           </div>
           <div className="subscribe">
             <h5>Subscribe</h5>

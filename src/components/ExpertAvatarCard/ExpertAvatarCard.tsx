@@ -9,7 +9,7 @@ type Props = {
 
 const ExpertAvatarCard = (props: Props) => {
   return (
-    <div className="d-flex align-items-center mb-3 gap-2">
+    <div className="expert_card d-flex align-items-center mb-3 gap-2">
       <img src={props.avatar} alt="olivia_mia_avatar" />
       <div>
         <h6 className="mb-1">{props.name}</h6>

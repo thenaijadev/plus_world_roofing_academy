@@ -6,3 +6,15 @@ div > div h6, div > div p{
 div > div span{
     font-size: 0.875rem;
 }
+
+@media screen and (max-width: 427px) {
+    .expert_card > img{
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+    .expert_card > div >h6,
+    .expert_card > div >p{
+        font-size: 0.8rem !important;
+        line-height: 1rem !important;
+    }
+}

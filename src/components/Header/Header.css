@@ -26,3 +26,12 @@ input {
 .tutor-button{
  cursor: pointer;
 }
+
+@media screen and (max-width: 427px) {
+  .nav{
+    padding-inline: 1rem !important;
+  }
+  .menu_list{
+    display: none !important;
+  }
+}

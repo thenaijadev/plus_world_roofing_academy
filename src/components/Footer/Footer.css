@@ -34,3 +34,9 @@ hr{
 .logo{
     width: 9rem;
 }
+
+@media screen and (max-width: 425px) {
+    .footer>div>div{
+        margin-inline: 1rem !important;
+    }
+}

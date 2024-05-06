@@ -89,7 +89,7 @@ const HomePage = () => {
         </div>
       </section>
       <section>
-        <div className="d-flex align-items-center justify-content-center w-100 logos overflow-x-hidden">
+        <div className="d-flex overflow-x-scroll align-items-center justify-content-center w-100 logos overflow-x-hidden">
           <img src={Cousera} alt="cousera" />
           <img src={Amazon} alt="amazon" />
           <img src={CodeAcademy} alt="code academy" />
@@ -99,7 +99,7 @@ const HomePage = () => {
         </div>
       </section>
       <section className="px-5 pt-5 my-5">
-        <div className="d-flex align-items-center justify-content-center gap-5">
+        <div className="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
           <div className="px-3">
             <img src={EnrolledStudent} alt="enrolled student image" />
           </div>
@@ -154,7 +154,7 @@ const HomePage = () => {
             have you covered.
           </p>
         </div>
-        <Nav tabs className="course-tabs w-50 d-flex px-4 m-auto  my-4">
+        <Nav tabs className="course-tabs w-50 d-flex px-4 m-auto my-4">
           <NavItem className="cursor-pointer ">
             <NavLink
               className={classnames({ active: activeTab === "All_Courses" })}
@@ -204,8 +204,8 @@ const HomePage = () => {
           </TabPane>
         </TabContent>
 
-        <div>
-          <div className="tutor d-flex align-items-center justify-content-between my-5 px-2 m-auto">
+        <div >
+          <div className="tutor d-flex flex-column flex-md-row align-items-center justify-content-between my-5 px-2 m-auto">
             <div>
               <Badge className="text-black mb-2" pill>
                 Our Tutors
@@ -284,7 +284,7 @@ const HomePage = () => {
         </div>
       </section>
       <section className="px-5 pt-5 my-5 stay_informed">
-        <div className="d-flex gap-5 mx-5 px-4 align-items-center justify-content-around">
+        <div className="d-flex flex-column flex-md-row gap-5 mx-5 px-4 align-items-center justify-content-around">
           <div>
             <img src={StayInformedImage} alt="stay informed" />
           </div>
@@ -310,7 +310,7 @@ const HomePage = () => {
         </div>
       </section>
       <section className="p-5 my-5 FAQ">
-        <div className="d-flex gap-5 mx-5 px-5 justify-content-around">
+        <div className="d-flex flex-column-reverse flex-md-row gap-5 mx-5 px-5 justify-content-around">
           <div className="w-50">
             <Badge className="text-black" pill>
               {" "}
