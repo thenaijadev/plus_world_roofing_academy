@@ -144,3 +144,7 @@
 .accordion-button:hover {
   background-color: var(--neutral-color-f) !important;
 }
+
+.sw {
+  transform: translateY(120px);
+}

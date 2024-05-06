@@ -1,0 +1,8 @@
+.vid {
+  transform: scale(0.8);
+  border-radius: 20px;
+}
+
+.sw {
+  transform: translateY(10px);
+}

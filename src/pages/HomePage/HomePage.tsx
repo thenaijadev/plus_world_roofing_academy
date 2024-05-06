@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { SetStateAction, useState, useContext } from "react";
+import { SetStateAction, useContext, useState } from "react";
 import {
   Accordion,
   AccordionBody,
@@ -26,22 +26,22 @@ import {
   StayInformedImage,
   Udemy,
 } from "../../assets";
+import BackToTopIcon from "../../components/BackToTop/BackToTopIcon";
 import ExpertAvatarCard from "../../components/ExpertAvatarCard/ExpertAvatarCard";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import IconButton from "../../components/IconButon/IconButton";
 import MyBadge from "../../components/MyBadge/MyBadge";
 import MyButton from "../../components/MyButton/MyButton";
+import { GlobalContext } from "../../GlobalProvider";
+import TutorForm from "../TutorForm/TutorForm";
 import AllCourse from "./components/AllCourse";
 import Testimonial from "./components/Testimonials/Testimonials";
 import TopCategory from "./components/TopCategory/TopCategory";
 import "./HomePage.css";
-import BackToTopIcon from "../../components/BackToTop/BackToTopIcon";
-import TutorForm from "../TutorForm/TutorForm";
-import { GlobalContext } from "../../GlobalProvider";
 
 const HomePage = () => {
-  const { tutorFormDisplay} = useContext(GlobalContext);
+  const { tutorFormDisplay } = useContext(GlobalContext);
   const [activeTab, setActiveTab] = useState("All_Courses");
 
   const toggle = (tab: SetStateAction<string>) => {
@@ -60,8 +60,8 @@ const HomePage = () => {
   return (
     <div id="main">
       <Header />
-      {tutorFormDisplay ? <TutorForm/> : ""}
-      <BackToTopIcon/>
+      {tutorFormDisplay ? <TutorForm /> : ""}
+      <BackToTopIcon />
       <section className="hero p-5 ">
         <div className="hero_description w-50 ps-5">
           <h1 className="mb-4">
