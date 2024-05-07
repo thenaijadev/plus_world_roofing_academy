@@ -19,7 +19,7 @@ function TopCategory() {
     const { img, type, amount, link } = props;
     return (
       <SwiperSlide>
-        <div className=" px-4 text-center d-flex flex-column align-items-center">
+        <div className="top_category px-4 text-center d-flex flex-column align-items-center">
           <div className="category_icon d-flex  align-items-center justify-content-center rounded-circle mb-1">
             <img src={img} alt="real estate office" />
           </div>

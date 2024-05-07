@@ -6,3 +6,21 @@
 .sw {
   transform: translateY(10px);
 }
+
+@media screen and (max-width: 427px) {
+  iframe{
+    width: 400px;
+    height: 200px;
+  }
+  .sw > div:nth-child(2) >h5{
+    margin-bottom: 0.5rem !important;
+    font-size: 0.6rem !important;
+  }
+  .testimonials{
+    margin-block: 1rem !important;
+  }
+  .testimonial_heading h4{
+    font-size: 2rem !important;
+    line-height: 2.625rem !important;
+  }
+}

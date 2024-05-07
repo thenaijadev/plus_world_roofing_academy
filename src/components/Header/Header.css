@@ -31,7 +31,13 @@ input {
   .nav{
     padding-inline: 1rem !important;
   }
+  .nav >img {
+    width: 100px;
+  }
   .menu_list{
     display: none !important;
+  }
+  .hamburger_menu{
+    display:block !important;
   }
 }

@@ -84,7 +84,7 @@ const HomePage = () => {
             leading companies.
           </p>
         </div>
-        <div>
+        <div className="top_category">
           <TopCategory />
         </div>
       </section>
@@ -104,7 +104,9 @@ const HomePage = () => {
             <img src={EnrolledStudent} alt="enrolled student image" />
           </div>
           <div className="more_about_us px-3">
-            <MyBadge name="Get More About Us" />
+            <div className="more_badge">
+              <MyBadge name="Get More About Us" />
+            </div>
             <h4 className="my-1 ">
               Thousand of top <span>courses</span> <br />
               now in one place
@@ -294,7 +296,7 @@ const HomePage = () => {
               study?
             </h4>
             <form action="">
-              <div className=" d-flex gap-1 ">
+              <div className=" d-flex flex-column flex-md-row gap-1 ">
                 <input
                   type="email"
                   className="form-control px-3 w-75 border-0 rounded-pill"
@@ -312,10 +314,9 @@ const HomePage = () => {
       <section className="p-5 my-5 FAQ">
         <div className="d-flex flex-column-reverse flex-md-row gap-5 mx-5 px-5 justify-content-around">
           <div className="w-50">
-            <Badge className="text-black" pill>
-              {" "}
-              FAQs
-            </Badge>
+            <div className="FAQ_badge ">
+              <MyBadge name="FAQs" />
+            </div>
             <h4 className="fs-2 mb-4 mt-2">
               Start Learning From <br />
               World’s Pro Instructors

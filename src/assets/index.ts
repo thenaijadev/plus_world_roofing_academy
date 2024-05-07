@@ -39,11 +39,13 @@ import Facebook from "./images/facebook.svg";
 import LinkedIn from "./images/linkedin.svg";
 import Instagram from "./images/instagram.svg";
 import ArrowUp from "./images/arrow_up.svg";
+import Menu from "./images/menu.svg";
 
 
 
 
 export {
+    Menu,
     ArrowUp,
     HeroImage,
     Logo,

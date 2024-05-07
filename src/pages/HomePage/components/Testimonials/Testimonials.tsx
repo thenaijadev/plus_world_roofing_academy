@@ -16,7 +16,7 @@ function Testimonial() {
   function card(props: TestimonialDataTypes) {
     const { videoUrl, name, reason } = props;
     return (
-      <SwiperSlide className="d-flex align-items-center sw">
+      <SwiperSlide className="d-flex flex-column flex-md-row align-items-center sw">
         <div>
           <iframe
             width="460"

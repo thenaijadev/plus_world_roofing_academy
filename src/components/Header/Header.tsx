@@ -7,6 +7,7 @@ import {
   CategoryIcon,
   FavouriteIcon,
   Logo,
+  Menu,
   SearchIcon,
 } from "../../assets";
 import MyButton from "../MyButton/MyButton";
@@ -26,9 +27,12 @@ const Header = () => {
   }
 
   return (
-    <nav className="d-flex nav px-5 py-3 justify-content-between gap-5 align-items-center">
-        <img src={Logo} alt="logo" />
-      <div className="menu_list">
+    <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
+      <img src={Logo} alt="logo" />
+      <div className="d-none hamburger_menu p-1 ">
+        <img src={Menu} alt="menu icon" />
+      </div>
+      <div className="menu_list d-flex justify-content-between gap-5 align-items-center">
         <div className="d-flex align-items-center">
           <ul className="d-flex align-items-center gap-4 mb-0">
             <li>

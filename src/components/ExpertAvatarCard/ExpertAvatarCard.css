@@ -9,8 +9,8 @@ div > div span{
 
 @media screen and (max-width: 427px) {
     .expert_card > img{
-        width: 5rem !important;
-        height: 5rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
     }
     .expert_card > div >h6,
     .expert_card > div >p{
