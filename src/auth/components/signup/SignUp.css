@@ -1,4 +1,3 @@
-
 .sign-up {
   position: fixed;
   top: 0;
@@ -18,6 +17,8 @@
   border-radius: 15px;
   padding-inline: 40px;
   padding-block: 20px;
+  max-width: 561px;
+  overflow-y: scroll;
 }
 .cancel_icon{
     cursor: pointer;
@@ -52,4 +53,11 @@ form > div > button, #email, #password{
 }
 .sign-up-link{
   color: var(--primary-color);
+}
+.sign-up-link:hover{
+  background-color: var(--neutral-color-f) !important;
+}
+.terms a{
+  text-decoration: none;
+  color: var(--black);
 }

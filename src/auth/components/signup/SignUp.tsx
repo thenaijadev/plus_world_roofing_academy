@@ -4,7 +4,7 @@ import { IoLogoFacebook } from 'react-icons/io'
 import { FormGroup, Input, Label } from 'reactstrap'
 import MyButton from '../../../components/MyButton/MyButton'
 import { IoClose } from 'react-icons/io5'
-
+import './SignUp.css'
 
 const Signup = () => {
 
@@ -63,7 +63,7 @@ const Signup = () => {
                             <div className="col-1 text-center"><span>or</span></div>
                             <div className="border-top border-black w-50 col-5"></div>
                         </div>
-                        <div className="my-3 continue-btn d-flex flex-column">
+                        <div className="mt-3 continue-btn d-flex flex-column">
                             <div className="mb-3 d-flex align-items-center  py-2 px-4 border border-black border-1 rounded-pill">
                                 <div >
                                     <FcGoogle />
@@ -77,15 +77,14 @@ const Signup = () => {
                                 <button className="btn fw-medium w-100 py-0">Continue with Facebook</button>
                             </div>
                         </div>
-                        <div className="text-center new fw-medium mb-3">
+                        <div className="text-center new fw-medium mb-4 pb-2 border-bottom border-black">
                             <span className="me-1">Already on Plusworld Academy?</span>
                             <button className="sign-up-link border-0 bg-white text-decoration-none ">Login</button>
                         </div>
-                        <hr className="mb-3" />
-                        <div className="text-center mb-3">
-                            <p>I accept Plus world Academy <a href="#">Terms of Use</a> and <a href="#">Privacy Notice</a>.</p>
-                            <p> Having trouble logging in? <a href="#">Learner help center</a></p>
-                            <p>This site is protected by reCAPTCHA Enterprise and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service apply</a>.</p>
+                        <div className="text-center mb-3 terms">
+                            <span  className='d-block'>I accept Plus world Academy <a href="#">Terms of Use</a> and <a href="#">Privacy Notice</a>.</span>
+                            <span className='d-block'> Having trouble logging in? <a href="#">Learner help center</a></span>
+                            <span className='d-block'>This site is protected by reCAPTCHA Enterprise and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service apply</a>.</span>
                         </div>
                     </form>
                 </div>
