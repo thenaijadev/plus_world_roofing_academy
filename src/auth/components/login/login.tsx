@@ -5,11 +5,12 @@ import { IoLogoFacebook } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { FormGroup, Input, Label } from "reactstrap";
 import MyButton from "../../../components/MyButton/MyButton";
-import "./login.css";
 import Signup from "../signup/SignUp";
+import "./login.css";
 
 function Login() {
   const [isLogin, setIsLogin] = useState<boolean>(true);
+
   function handleSubmit() {}
 
   return isLogin ? (
@@ -95,7 +96,7 @@ function Login() {
       </div>
     </div>
   ) : (
-    <Signup/>
+    <Signup />
   );
 }
 
