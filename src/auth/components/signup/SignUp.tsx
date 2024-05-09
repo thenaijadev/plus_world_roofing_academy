@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { FormGroup, Input, Label } from "reactstrap";
 import MyButton from "../../../components/MyButton/MyButton";
 import "./SignUp.css";
+import OTPModal from "../OTP/OTPModal";
 
 const Signup = () => {
   const [isOTP, setIsOTP] = useState<boolean>(false);
@@ -118,9 +119,7 @@ const Signup = () => {
       </div>
     </div>
   ) : (
-    <div className="sign-up">
-      <div className="form_card">OTP MODAL</div>
-    </div>
+    <OTPModal/>
   );
 };
 

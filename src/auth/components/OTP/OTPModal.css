@@ -1,4 +1,4 @@
-.login {
+.otp {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
   z-index: 5;
 }
 
-.login > .form_card {
+.otp >.form_card {
   background-color: white;
   border-radius: 15px;
   padding-inline: 40px;
@@ -40,16 +40,18 @@
   line-height: 30px;
 }
 
-.eye-icon{
-  top: 12px;
-  right: 0;
+.otp-input{
+    width: 60px;
+    height: 60px;
+    gap: 12px;
 }
-form > div > button, #email, #password{
-  padding-block: 10px !important;
+
+.otp-input:focus{
+    box-shadow: var(--primary-color) !important;
 }
-.continue-btn > div > button:hover{
-  background-color: var(--neutral-color-f) !important;
+
+.coloured-text{
+    color: var(--primary-color);
 }
-.sign-up-link{
-  color: var(--primary-color);
-}
+
+
