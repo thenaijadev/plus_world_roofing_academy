@@ -49,10 +49,6 @@ form > div > button, #email, #password{
 .continue-btn > div > button:hover{
   background-color: var(--neutral-color-f) !important;
 }
-.new > a, .new>span{
-  font-size: 18px !important;
-  line-height: 26px !important;
-}
 .sign-up-link{
   color: var(--primary-color);
 }

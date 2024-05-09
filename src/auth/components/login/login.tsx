@@ -52,13 +52,17 @@ function Login() {
             <div className="border-top border-black w-50 col-5"></div>
           </div>
           <div className="my-3 continue-btn d-flex flex-column">
-            <div className="mb-3 d-flex align-items-center justify-content-center py-1 px-4 border border-black border-1 rounded-pill">
-              <FcGoogle />
-              <button className="btn fw-medium ">Continue with google</button>
+            <div className="mb-3 d-flex align-items-center  py-2 px-4 border border-black border-1 rounded-pill">
+              <div >
+                <FcGoogle />
+              </div>
+              <button className="btn fw-medium w-100  py-0">Continue with google</button>
             </div>
-            <div className="d-flex align-items-center justify-content-center px-4 py-1 border border-black border-1 rounded-pill">
-              <IoLogoFacebook />
-              <button className="btn fw-medium ">Continue with Facebook</button>
+            <div className="d-flex align-items-center  px-4 py-2 border border-black border-1 rounded-pill">
+              <div>
+                <IoLogoFacebook />
+              </div>
+              <button className="btn fw-medium w-100 py-0">Continue with Facebook</button>
             </div>
           </div>
           <div className="text-center new fw-medium">
