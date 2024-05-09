@@ -10,22 +10,29 @@ import {
   Menu,
   SearchIcon,
 } from "../../assets";
+import { GlobalContext } from "../../GlobalProvider";
 import MyButton from "../MyButton/MyButton";
 import "./Header.css";
-import { GlobalContext } from "../../GlobalProvider";
 
 const Header = () => {
-  const { setTutorFormDisplay, tutorFormDisplay} = useContext(GlobalContext);
- 
-  function handleTutorForm(){
-    if(tutorFormDisplay){
-      setTutorFormDisplay(false)
-    }
-    else{
-      setTutorFormDisplay(true)
+  const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
+  const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
+
+  function handleTutorForm() {
+    if (tutorFormDisplay) {
+      setTutorFormDisplay(false);
+    } else {
+      setTutorFormDisplay(true);
     }
   }
 
+  function handleLoginFormDisplay() {
+    if (loginFormDisplay) {
+      setLoginFormDisplay(false);
+    } else {
+      setLoginFormDisplay(true);
+    }
+  }
   return (
     <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
       <img src={Logo} alt="logo" />
@@ -64,7 +71,9 @@ const Header = () => {
               <img src={SearchIcon} alt="favourite icon" />
             </div>
           </div>
-          <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>Be a Tutor</p>
+          <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
+            Be a Tutor
+          </p>
           <div className="d-flex gap-2">
             <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
               <img src={FavouriteIcon} alt="favourite icon" />
@@ -73,12 +82,8 @@ const Header = () => {
               <img src={CartIcon} alt="favourite icon" />
             </div>
           </div>
-        
-            <NavLink className="fw-bold " to="login">
-        
-              <MyButton name="Login" />
-            </NavLink>
-        
+
+          <MyButton onClick={handleLoginFormDisplay} name="Login" />
         </div>
       </div>
     </nav>

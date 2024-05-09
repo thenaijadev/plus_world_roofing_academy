@@ -3,9 +3,8 @@ import App from "../App";
 import Contact from "../pages/Contact/Contact";
 import Course from "../pages/Courses/Course";
 import HomePage from "../pages/HomePage/HomePage";
-import Login from "../pages/login/login";
+// import Login from "../pages/login/login";
 import ComingSoon from "../pages/ComingSoon/ComingSoon";
-
 
 export const router = createBrowserRouter([
   {
@@ -15,9 +14,8 @@ export const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "courses", element: <Course /> },
       { path: "contact", element: <Contact /> },
-      { path: "login", element: <Login /> },
-      { path: "coming-soon", element: <ComingSoon redirectPath="/"/> },
+      // { path: "login", element: <Login /> },
+      { path: "coming-soon", element: <ComingSoon redirectPath="/" /> },
     ],
-
   },
 ]);

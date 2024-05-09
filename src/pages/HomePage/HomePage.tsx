@@ -34,6 +34,8 @@ import IconButton from "../../components/IconButon/IconButton";
 import MyBadge from "../../components/MyBadge/MyBadge";
 import MyButton from "../../components/MyButton/MyButton";
 import { GlobalContext } from "../../GlobalProvider";
+
+import Login from "../../auth/components/login/login";
 import TutorForm from "../TutorForm/TutorForm";
 import AllCourse from "./components/AllCourse";
 import Testimonial from "./components/Testimonials/Testimonials";
@@ -42,6 +44,8 @@ import "./HomePage.css";
 
 const HomePage = () => {
   const { tutorFormDisplay } = useContext(GlobalContext);
+  const { loginFormDisplay } = useContext(GlobalContext);
+
   const [activeTab, setActiveTab] = useState("All_Courses");
 
   const toggle = (tab: SetStateAction<string>) => {
@@ -60,6 +64,8 @@ const HomePage = () => {
   return (
     <div id="main">
       <Header />
+      {loginFormDisplay ? <Login /> : ""}
+
       {tutorFormDisplay ? <TutorForm /> : ""}
       <BackToTopIcon />
       <section className="hero p-5 ">
@@ -143,7 +149,7 @@ const HomePage = () => {
               />
               <p className="mb-0 fw-bold">Global community.</p>
             </div>
-            <MyButton name="Explore Careers" />
+            <MyButton onClick={() => {}} name="Explore Careers" />
           </div>
         </div>
       </section>
@@ -206,7 +212,7 @@ const HomePage = () => {
           </TabPane>
         </TabContent>
 
-        <div >
+        <div>
           <div className="tutor d-flex flex-column flex-md-row align-items-center justify-content-between my-5 px-2 m-auto">
             <div>
               <Badge className="text-black mb-2" pill>
