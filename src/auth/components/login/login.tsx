@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { FormGroup, Input, Label } from "reactstrap";
 import MyButton from "../../../components/MyButton/MyButton";
 import "./login.css";
+import Signup from "../signup/SignUp";
 
 function Login() {
   const [isLogin, setIsLogin] = useState<boolean>(true);
@@ -94,9 +95,7 @@ function Login() {
       </div>
     </div>
   ) : (
-    <div className="login">
-      <div className="form_card">Sign Up</div>
-    </div>
+    <Signup/>
   );
 }
 
