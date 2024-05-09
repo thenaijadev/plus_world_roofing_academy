@@ -22,37 +22,37 @@ const OTPModal = () => {
           </div>
           <div className="d-flex align-items-center justify-content-between gap-3 ">
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
             />
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
             />
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
             />
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
             />
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
             />
             <Input   
-              className="border-black border otp-input"  
+              className="border-black border text-center fs-3 otp-input"  
               maxLength={1}
               type="text"
               autoComplete="off"
