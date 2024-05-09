@@ -18,7 +18,18 @@
   padding-inline: 40px;
   padding-block: 20px;
 }
+.cancel_icon{
+    cursor: pointer;
+    color: #111;
+    padding: 0;
+      font-size: 1.6rem;
+      background-color: rgba(255, 170, 0, 1);
+      border: none;
+      border-radius: 2rem;
+      padding: .3rem;
+      font-weight: 900;
 
+}
 .welcome-text h3{
   font-size: 31px;
   line-height: 37.21px;
@@ -26,6 +37,14 @@
 .welcome-text p{
   font-size: 21px;
   line-height: 30px;
+}
+
+.eye-icon{
+  top: 12px;
+  right: 0;
+}
+form > div > button, #email, #password{
+  padding-block: 10px !important;
 }
 .continue-btn > div > button:hover{
   background-color: var(--neutral-color-f) !important;
