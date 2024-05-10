@@ -31,6 +31,16 @@ input {
   .nav{
     padding-inline: 1rem !important;
   }
+  .nav-mobile-display{
+    display: block !important;
+  }
+  .nav-mobile > div{
+    top: 0px;
+    right: 0;
+  }
+  .nav-mobile >div> ul > li >a:hover{
+    background-color: var(--secondary-color) !important;
+  }
   .nav >img {
     width: 100px;
   }

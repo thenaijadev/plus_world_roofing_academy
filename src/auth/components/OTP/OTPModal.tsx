@@ -3,7 +3,7 @@ import { Input } from "reactstrap"
 import './OTPModal.css'
 import { FcClock } from "react-icons/fc"
 import MyButton from "../../../components/MyButton/MyButton"
-import  {  ChangeEvent, useState } from "react"
+import  {   useState } from "react"
 
 
 const OTPModal = () => {

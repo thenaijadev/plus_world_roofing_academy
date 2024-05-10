@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Input } from "reactstrap";
 import {
@@ -17,6 +17,10 @@ import "./Header.css";
 const Header = () => {
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
+  const  navRef = useRef();
+  const showNavbar = () => {
+      navRef.current.classList.toggle('nav-mobile-display')
+  }
 
   function handleTutorForm() {
     if (tutorFormDisplay) {
@@ -33,60 +37,97 @@ const Header = () => {
       setLoginFormDisplay(true);
     }
   }
-  return (
-    <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
-      <img src={Logo} alt="logo" />
-      <div className="d-none hamburger_menu p-1 ">
-        <img src={Menu} alt="menu icon" />
-      </div>
-      <div className="menu_list d-flex justify-content-between gap-5 align-items-center">
-        <div className="d-flex align-items-center">
-          <ul className="d-flex align-items-center gap-4 mb-0">
-            <li>
-              <NavLink className="fw-bold" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="fw-bold" to="courses">
-                Courses
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="fw-bold" to="contact">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+  return (   
+    <>
+      <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
+        <img src={Logo} alt="logo" />
+      
+        <div className="d-none hamburger_menu p-1 ">
+          <button onClick={showNavbar}><img src={Menu} alt="menu icon" /></button>
         </div>
-        <div className="d-flex gap-2 align-items-center ">
-          <div className="d-flex align-items-center border-black border rounded-pill ps-3 pe-1 py-1">
-            <div className="d-flex gap-2 align-items-center border-end px-2 border-black border-2 fw-bold">
-              <img src={CategoryIcon} alt="category" />
-              <p className="mb-0">Category</p>
-              <img src={ArrowDown} alt="down arrow" />
-            </div>
-            <Input placeholder="Search For Course, teachers" />
-            <div className="badge_icon p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-              <img src={SearchIcon} alt="favourite icon" />
-            </div>
+      
+        <div className="menu_list d-flex justify-content-between gap-5 align-items-center">
+      
+          <div className="d-flex align-items-center">
+            <ul className="d-flex align-items-center w-100 gap-4 mb-0">
+              <li className="">
+                <NavLink className="fw-bold" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="fw-bold" to="courses">
+                  Courses
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="fw-bold" to="contact">
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
           </div>
-          <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
-            Be a Tutor
-          </p>
-          <div className="d-flex gap-2">
-            <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-              <img src={FavouriteIcon} alt="favourite icon" />
+          <div className="d-flex gap-2 align-items-center ">
+            <div className="d-flex align-items-center border-black border rounded-pill ps-3 pe-1 py-1">
+              <div className="d-flex gap-2 align-items-center border-end px-2 border-black border-2 fw-bold">
+                <img src={CategoryIcon} alt="category" />
+                <p className="mb-0">Category</p>
+                <img src={ArrowDown} alt="down arrow" />
+              </div>
+              <Input placeholder="Search For Course, teachers" />
+              <div className="badge_icon p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                <img src={SearchIcon} alt="favourite icon" />
+              </div>
             </div>
-            <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-              <img src={CartIcon} alt="favourite icon" />
+            <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
+              Be a Tutor
+            </p>
+            <div className="d-flex gap-2">
+              <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                <img src={FavouriteIcon} alt="favourite icon" />
+              </div>
+              <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                <img src={CartIcon} alt="favourite icon" />
+              </div>
             </div>
+            <MyButton onClick={handleLoginFormDisplay} name="Login" />
           </div>
-
-          <MyButton onClick={handleLoginFormDisplay} name="Login" />
         </div>
-      </div>
-    </nav>
+      </nav>
+      <nav ref={navRef} className="nav-mobile nav-mobile-display d-none bg-white w-50 position-relative">
+            <div className="position-absolute px-3 py-4 w-100 gap-4 d-flex flex-column align-items-start bg-white">
+              <ul className="d-flex ps-0 flex-column align-items-center gap-4 mb-0">
+                <li>
+                  <NavLink className="fw-bold" to="/">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="fw-bold" to="courses">
+                    Courses
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="fw-bold" to="contact">
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+                      <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
+                Be a Tutor
+              </p>
+              <div className="d-flex gap-2">
+                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                  <img src={FavouriteIcon} alt="favourite icon" />
+                </div>
+                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                  <img src={CartIcon} alt="favourite icon" />
+                </div>
+              </div>
+              <MyButton onClick={handleLoginFormDisplay} name="Login" />
+            </div>
+        </nav>
+    </>
   );
 };
 
