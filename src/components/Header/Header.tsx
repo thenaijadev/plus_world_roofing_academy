@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext} from "react";
 import { NavLink } from "react-router-dom";
 import { Input } from "reactstrap";
 import {
@@ -17,9 +17,9 @@ import "./Header.css";
 const Header = () => {
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
-  const  navRef = useRef();
+  // const  navRef = useRef();
   const showNavbar = () => {
-      navRef.current.classList.toggle('nav-mobile-display')
+      // navRef.current.classList.toggle('nav-mobile-display')
   }
 
   function handleTutorForm() {
@@ -94,7 +94,8 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <nav ref={navRef} className="nav-mobile nav-mobile-display d-none bg-white w-50 position-relative">
+      {/* ref={navRef} */}
+      <nav  className="nav-mobile nav-mobile-display d-none bg-white w-50 position-relative">
             <div className="position-absolute px-3 py-4 w-100 gap-4 d-flex flex-column align-items-start bg-white">
               <ul className="d-flex ps-0 flex-column align-items-center gap-4 mb-0">
                 <li>

@@ -9,7 +9,7 @@ import  {   useState } from "react"
 const OTPModal = () => {
   const [otp, setOtp] = useState(new Array(6).fill(''))
 
-  function handleChange(e, index: number) {
+  function handleChange(e: any, index: number) {
     if (isNaN(e.target.value)) return false;
     setOtp([...otp.map((data, indx) => {
       indx === index ? e.target.value : data
