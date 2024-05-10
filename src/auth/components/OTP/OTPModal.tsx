@@ -3,9 +3,22 @@ import { Input } from "reactstrap"
 import './OTPModal.css'
 import { FcClock } from "react-icons/fc"
 import MyButton from "../../../components/MyButton/MyButton"
+import  {  ChangeEvent, useState } from "react"
 
 
 const OTPModal = () => {
+  const [otp, setOtp] = useState(new Array(6).fill(''))
+
+  function handleChange(e, index: number) {
+    if (isNaN(e.target.value)) return false;
+    setOtp([...otp.map((data, indx) => {
+      indx === index ? e.target.value : data
+    })]);
+    if (e.target.value && e.target.nextSibling) {
+      e.target.nextSibling.focus()
+    }
+  }
+  
   function handleSubmit() { }
   
   return (
@@ -21,42 +34,18 @@ const OTPModal = () => {
               moment to arrive</p>
           </div>
           <div className="d-flex align-items-center justify-content-between gap-3 ">
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
+            {
+              otp.map((data, i) => {
+                return <Input   
+                  className="border-black border text-center fs-3 otp-input"  
+                  value={data}
+                  onChange={(e) => handleChange(e, i)}
               maxLength={1}
               type="text"
               autoComplete="off"
             />
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
-              maxLength={1}
-              type="text"
-              autoComplete="off"
-            />
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
-              maxLength={1}
-              type="text"
-              autoComplete="off"
-            />
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
-              maxLength={1}
-              type="text"
-              autoComplete="off"
-            />
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
-              maxLength={1}
-              type="text"
-              autoComplete="off"
-            />
-            <Input   
-              className="border-black border text-center fs-3 otp-input"  
-              maxLength={1}
-              type="text"
-              autoComplete="off"
-          />
+              })
+            }
           </div>
           <div className="d-flex align-items-center justify-content-center my-2 gap-2">
             <FcClock />

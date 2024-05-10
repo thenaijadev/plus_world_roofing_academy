@@ -44,10 +44,14 @@
     width: 60px;
     height: 60px;
     gap: 12px;
+    transition: all 0.1s;
+    overflow-y:  hidden !important;
 }
 
 .otp-input:focus{
-    box-shadow: var(--primary-color) !important;
+    border: var(--secondary-color) !important;
+    box-shadow: 0 0 2px 2px var(--primary-color) !important;
+    overflow-y:  hidden !important;
 }
 
 .coloured-text{
