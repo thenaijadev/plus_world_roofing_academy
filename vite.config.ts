@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     // ... build options
     rollupOptions: {
-      input: ['./src/main.tsx', './public/index.html'], // Include index.html
+      input: ['./src/index.tsx', './public/index.html'], // Include index.html
     },
   },
 

@@ -38,7 +38,7 @@
     "typescript": ""
   },
   "description": "This template",
-  "main": "main.tsx",
+  "main": "index.tsx",
   "author": "",
   "license": "ISC"
 }
