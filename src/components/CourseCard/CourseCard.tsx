@@ -5,6 +5,7 @@ import MyBadge from "../MyBadge/MyBadge";
 import "./CourseCard.css";
 
 type Props = {
+  id: number;
   title: string;
   author: string;
   amount: number;
@@ -16,6 +17,7 @@ const CourseCard = (props: Props) => {
     <SwiperSlide
       className="card border border-black rounded-4 mb-5 py-3 px-3"
       style={{ transform: "scale(1)" }}
+      key={props.id}
     >
       <div className="rounded-3 roof_top_container pe-3 pt-2">
         <div className="d-flex justify-content-end  ">

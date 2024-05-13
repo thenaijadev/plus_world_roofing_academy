@@ -1,0 +1,12 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import "swiper/css";
+import "swiper/css/bundle";
+import { Navigation } from "swiper/modules";
+import { Swiper } from "swiper/react";
+import CourseCard from "../../../components/CourseCard/CourseCard";
+import AllCourseData from "../../../components/CourseCard/CourseData";
+import { SwiperNavButtons } from "../../../components/SwiperNavButtons/SwiperNavButtons";
+const AllCourse = () => {
+    return (_jsxs(Swiper, { spaceBetween: 20, slidesPerView: 4, loop: true, style: { transform: "scale(0.9)" }, modules: [Navigation], onSwiper: (swiper) => console.log(swiper), onSlideChange: () => console.log("slide change"), className: "d-flex justify-content-around align-items-center gap-3 mb-5 m-auto", children: [_jsx(SwiperNavButtons, {}), AllCourseData.map(CourseCard)] }));
+};
+export default AllCourse;

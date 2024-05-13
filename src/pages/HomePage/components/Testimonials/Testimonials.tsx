@@ -8,15 +8,17 @@ import TestimonialData from "./TestimonialsData";
 
 function Testimonial() {
   interface TestimonialDataTypes {
+    id: number;
     videoUrl: string;
     name: string;
     reason: string;
   }
 
   function card(props: TestimonialDataTypes) {
-    const { videoUrl, name, reason } = props;
+    const { id,videoUrl, name, reason } = props;
     return (
-      <SwiperSlide className="d-flex flex-column flex-md-row align-items-center sw">
+      <SwiperSlide className="d-flex flex-column flex-md-row align-items-center sw"
+      key={id}>
         <div>
           <iframe
             width="460"
