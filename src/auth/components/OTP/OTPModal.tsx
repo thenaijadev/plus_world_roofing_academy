@@ -37,7 +37,7 @@ const OTPModal = () => {
             <p>We emailed you a security code at kelvinmesh@gmail.com. It may take a
               moment to arrive</p>
           </div>
-          <div className="d-flex align-items-center justify-content-between gap-3 ">
+          <div className="d-flex align-items-center justify-content-between gap-1 ">
             {
               otp.map((data, i) => {
                 return <Input   

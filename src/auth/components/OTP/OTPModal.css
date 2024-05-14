@@ -6,7 +6,6 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 5;
@@ -18,6 +17,8 @@
   padding-inline: 40px;
   padding-block: 20px;
   overflow: hidden;
+  margin-inline: 15px;
+  margin-block: 5px;
 }
 .cancel_icon{
     cursor: pointer;
