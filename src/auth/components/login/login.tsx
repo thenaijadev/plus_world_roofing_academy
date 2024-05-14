@@ -11,14 +11,19 @@ import "./login.css";
 function Login() {
   const [isLogin, setIsLogin] = useState<boolean>(true);
 
-  function handleSubmit() {}
+  function handleSubmit() { }
+    function handleCloseForm() {
+    // Handle any actions you want to perform when closing the form (e.g., reset form data)
+    setIsLogin(false); // Switch to Signup component
+  }
+  
 
   return isLogin ? (
     <div className="login">
       <div className="form_card">
         <form action="">
           <div className="cancel-icon-container">
-            <IoClose className="cancel_icon" />
+            <IoClose className="cancel_icon" onClick={handleCloseForm}/>
           </div>
           <div className="text-center welcome-text">
             <h3>Welcome Back</h3>
