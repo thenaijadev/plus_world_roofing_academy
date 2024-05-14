@@ -149,6 +149,10 @@
   transform: translateY(120px);
 }
 
+#course-swiper{
+  transform: scale(0.9);
+}
+
 @media screen and (max-width: 379px) {
   
   .hero_description h1, .hero_description h1 > span{
@@ -215,10 +219,8 @@
    section:nth-child(6) > div > div:nth-child(1) > img{
     display: none;
   }
-/*   
-  .more_about_us > h4{
-    text-align: center;
-  } */
+
+
   section:nth-child(7){
     padding: 1rem !important;
   }
@@ -241,8 +243,11 @@
   }
   .performance_metrics > div{
     padding-inline: 0.5rem !important;
-    background-color: var(--secondary-color) !important;
   }
+
+  #course-swiper{
+  transform: none;
+}
   
   .stay_informed{
     padding: 1rem !important;

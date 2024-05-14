@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Input } from "reactstrap";
 import {
@@ -17,11 +17,11 @@ import "./Header.css";
 const Header = () => {
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
-  const navRef = useRef<HTMLDivElement | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-const showNavbar = () => {
-  navRef.current?.classList.toggle('nav-mobile-display');
-};
+  const showNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
 
   function handleTutorForm() {
@@ -43,6 +43,39 @@ const showNavbar = () => {
     <>
       <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
         <img src={Logo} alt="logo" />
+        {isOpen && (<nav  className={`${isOpen ? 'show-menu' : ''} "nav-mobile  nav-mobile-display bg-white w-50 position-relative"`}>
+            <div className="position-absolute z-2 px-3 py-4 mt-3 w-100 gap-4 d-flex flex-column align-items-start bg-white">
+              <ul className="d-flex ps-0 flex-column align-items-center gap-4 mb-0">
+                <li>
+                  <NavLink className="fw-bold" to="/">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="fw-bold" to="courses">
+                    Courses
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="fw-bold" to="contact">
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+                      <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
+                Be a Tutor
+              </p>
+              <div className="d-flex gap-2">
+                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                  <img src={FavouriteIcon} alt="favourite icon" />
+                </div>
+                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
+                  <img src={CartIcon} alt="favourite icon" />
+                </div>
+              </div>
+              <MyButton onClick={handleLoginFormDisplay} name="Login" />
+            </div>
+        </nav>)}
       
         <div className="d-none hamburger_menu p-1 ">
           <button onClick={showNavbar}><img src={Menu} alt="menu icon" /></button>
@@ -95,41 +128,9 @@ const showNavbar = () => {
             <MyButton onClick={handleLoginFormDisplay} name="Login" />
           </div>
         </div>
+        
       </nav>
-      {/* ref={navRef} */}
-      <nav  className="nav-mobile nav-mobile-display d-none bg-white w-50 position-relative">
-            <div className="position-absolute px-3 py-4 w-100 gap-4 d-flex flex-column align-items-start bg-white">
-              <ul className="d-flex ps-0 flex-column align-items-center gap-4 mb-0">
-                <li>
-                  <NavLink className="fw-bold" to="/">
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="fw-bold" to="courses">
-                    Courses
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="fw-bold" to="contact">
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
-                      <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
-                Be a Tutor
-              </p>
-              <div className="d-flex gap-2">
-                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-                  <img src={FavouriteIcon} alt="favourite icon" />
-                </div>
-                <div className=" p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-                  <img src={CartIcon} alt="favourite icon" />
-                </div>
-              </div>
-              <MyButton onClick={handleLoginFormDisplay} name="Login" />
-            </div>
-        </nav>
+      
     </>
   );
 };

@@ -11,11 +11,12 @@ const AllCourse = () => {
       spaceBetween={20}
       slidesPerView={4}
       loop={true}
-      style={{ transform: "scale(0.9)" }}
+      // style={{  }}
       modules={[Navigation]}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
       className="d-flex justify-content-around align-items-center gap-3 mb-5 m-auto"
+      id="course-swiper"
     >
       <SwiperNavButtons />
       {AllCourseData.map(CourseCard)}

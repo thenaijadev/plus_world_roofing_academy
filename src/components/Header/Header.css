@@ -27,15 +27,18 @@ input {
  cursor: pointer;
 }
 
+.nav-mobile{
+  display: none;
+}
+
+
 @media screen and (max-width: 427px) {
   .nav{
     padding-inline: 1rem !important;
   }
-  .nav-mobile-display{
-    display: block !important;
-  }
+  
   .nav-mobile > div{
-    top: 0px;
+    top: 0;
     right: 0;
   }
   .nav-mobile >div> ul > li >a:hover{
