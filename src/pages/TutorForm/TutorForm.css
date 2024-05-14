@@ -1,7 +1,7 @@
 .tutor-form-container{
     position: fixed;
     margin: 0;
-    /* width: 100%; */
+    width: 100%;
     flex-direction: column;
 display: flex;
 justify-content: center;

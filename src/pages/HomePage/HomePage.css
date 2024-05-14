@@ -174,7 +174,7 @@
      width: 2rem !important;
     height: 2rem !important;
   }
-  section:nth-child(6) > div{
+  #get-more > div{
     gap: 1rem !important;
   }
   .expert_card{
@@ -207,7 +207,7 @@
     width: 3rem;
     height: 3rem;
   }
-  .hero, section:nth-child(4),#top-category{
+  .hero, #get-more,#top-category{
     padding: 1rem !important;
   }
   .course-tabs{
@@ -216,12 +216,15 @@
   .more_about_us{
     padding: 0 !important;
   }
-   section:nth-child(6) > div > div:nth-child(1) > img{
-    display: none;
+   #get-more >div>div> img{
+    display: none ;
   }
 
+  #get-more{
+    margin-top: 0;
+  }
 
-  section:nth-child(7){
+  #expore_courses{
     padding: 1rem !important;
   }
 
@@ -282,4 +285,8 @@
     text-align: center;
 
   }
+  .logos>img{
+  width: 50px;
+  height: 35px;
+ }
 }

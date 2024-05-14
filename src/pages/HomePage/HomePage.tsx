@@ -95,7 +95,7 @@ const HomePage = () => {
         </div>
       </section>
       <section>
-        <div className="d-flex overflow-x-scroll align-items-center justify-content-center w-100 logos overflow-x-hidden">
+        <div className="d-flex  align-items-center justify-content-center w-100 logos ">
           <img src={Cousera} alt="cousera" />
           <img src={Amazon} alt="amazon" />
           <img src={CodeAcademy} alt="code academy" />
@@ -104,7 +104,7 @@ const HomePage = () => {
           <img src={Udemy} alt="udemy logo" />
         </div>
       </section>
-      <section className="px-5 pt-5 my-5">
+      <section className="px-5 pt-5 my-5" id="get-more">
         <div className="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
           <div className="px-3">
             <img src={EnrolledStudent} alt="enrolled student image" />
@@ -153,7 +153,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="px-5 pt-5 my-5">
+      <section className="px-5 pt-5 my-5" id="expore_courses">
         <div className="text-center mb-5 expore_courses">
           <MyBadge name="Top Class Courses" />
           <h4 className="my-1">Explore our Best Courses</h4>

@@ -11,7 +11,6 @@ const AllCourse = () => {
       spaceBetween={20}
       slidesPerView={4}
       loop={true}
-      // style={{  }}
       modules={[Navigation]}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}

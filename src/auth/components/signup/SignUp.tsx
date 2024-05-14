@@ -10,9 +10,12 @@ import OTPModal from "../OTP/OTPModal";
 
 const Signup = () => {
   const [isOTP, setIsOTP] = useState<boolean>(false);
+  const [signUp, setIsSignUp] = useState<boolean>(true);
+
 
   function handleSubmit() {
     setIsOTP(true);
+    setIsSignUp(false)
   }
 
   return !isOTP ? (
@@ -20,7 +23,7 @@ const Signup = () => {
       <div className="form_card">
         <form action="">
           <div className="cancel-icon-container">
-            <IoClose className="cancel_icon" />
+            <IoClose className="cancel_icon" onClick={handleSubmit}/>
           </div>
           <div className="text-center welcome-text">
             <h3>Sign up</h3>

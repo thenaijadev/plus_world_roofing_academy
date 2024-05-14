@@ -13,9 +13,8 @@ function Login() {
   const [isSignUp, setIsSignUp] = useState<boolean>(true);
   function handleSubmit() {}
   function handleCloseForm() {
-    // Handle any actions you want to perform when closing the form (e.g., reset form data)
     setIsLogin(false);
-    setIsSignUp(false); // Switch to Signup component
+    setIsSignUp(false); 
   }
 
   return isLogin ? (
