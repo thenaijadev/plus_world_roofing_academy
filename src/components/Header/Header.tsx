@@ -17,12 +17,12 @@ import "./Header.css";
 const Header = () => {
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const showNavbar = () => {
     setIsOpen(!isOpen);
   };
-
 
   function handleTutorForm() {
     if (tutorFormDisplay) {
@@ -39,11 +39,16 @@ const Header = () => {
       setLoginFormDisplay(true);
     }
   }
-  return (   
+  return (
     <>
       <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
         <img src={Logo} alt="logo" />
-        {isOpen && (<nav  className={`${isOpen ? 'show-menu' : ''} "nav-mobile  nav-mobile-display bg-white w-50 position-relative"`}>
+        {isOpen && (
+          <nav
+            className={`${
+              isOpen ? "show-menu" : ""
+            } "nav-mobile  nav-mobile-display bg-white w-50 position-relative"`}
+          >
             <div className="position-absolute z-2 px-3 py-4 mt-3 w-100 gap-4 d-flex flex-column align-items-start bg-white">
               <ul className="d-flex ps-0 flex-column align-items-center gap-4 mb-0">
                 <li>
@@ -62,7 +67,10 @@ const Header = () => {
                   </NavLink>
                 </li>
               </ul>
-                      <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>
+              <p
+                className="fw-bold mb-0 tutor-button"
+                onClick={handleTutorForm}
+              >
                 Be a Tutor
               </p>
               <div className="d-flex gap-2">
@@ -75,14 +83,16 @@ const Header = () => {
               </div>
               <MyButton onClick={handleLoginFormDisplay} name="Login" />
             </div>
-        </nav>)}
-      
+          </nav>
+        )}
+
         <div className="d-none hamburger_menu p-1 ">
-          <button onClick={showNavbar}><img src={Menu} alt="menu icon" /></button>
+          <button onClick={showNavbar}>
+            <img src={Menu} alt="menu icon" />
+          </button>
         </div>
-      
+
         <div className="menu_list d-flex justify-content-between gap-5 align-items-center">
-      
           <div className="d-flex align-items-center">
             <ul className="d-flex align-items-center w-100 gap-4 mb-0">
               <li className="">
@@ -128,9 +138,7 @@ const Header = () => {
             <MyButton onClick={handleLoginFormDisplay} name="Login" />
           </div>
         </div>
-        
       </nav>
-      
     </>
   );
 };
