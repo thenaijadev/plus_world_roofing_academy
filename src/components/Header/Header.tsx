@@ -17,12 +17,12 @@ import "./Header.css";
 const Header = () => {
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const showNavbar = () => {
     setIsOpen(!isOpen);
   };
-
 
   function handleTutorForm() {
     if (tutorFormDisplay) {
@@ -39,17 +39,18 @@ const Header = () => {
       setLoginFormDisplay(true);
     }
   }
-  return (   
+  return (
     <>
       <nav className="d-flex nav px-5 py-3 justify-content-between align-items-center">
         <img src={Logo} alt="logo" />
         
         <div className="d-none hamburger_menu p-1 ">
-          <button onClick={showNavbar}><img src={Menu} alt="menu icon" /></button>
+          <button onClick={showNavbar}>
+            <img src={Menu} alt="menu icon" />
+          </button>
         </div>
-      
+
         <div className="menu_list d-flex justify-content-between gap-5 align-items-center">
-      
           <div className="d-flex align-items-center">
             <ul className="d-flex align-items-center w-100 gap-4 mb-0">
               <li className="">
@@ -95,7 +96,6 @@ const Header = () => {
             <MyButton onClick={handleLoginFormDisplay} name="Login" />
           </div>
         </div>
-        
       </nav>
       {isOpen && (<nav  className={`${isOpen ? 'show-menu' : ''} "nav-mobile z-3 nav-mobile-display bg-white w-50 position-relative"`}>
             <div className="position-absolute z-2 px-3 py-4  w-75 gap-4 d-flex flex-column align-items-start bg-white">
