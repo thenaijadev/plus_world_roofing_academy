@@ -39,7 +39,7 @@ return(
 
         <div className="input-field">
             <label>What do you want to teach?</label><br/>
-            <select>
+            <select name="categories" title="categories">
                 <option>Roofing Technology</option>
                 <option>Construction</option>
                 <option>Facility Management</option>

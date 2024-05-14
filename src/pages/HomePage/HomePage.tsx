@@ -81,7 +81,7 @@ const HomePage = () => {
           <IconButton title="Explore careers" image={ArrowFowardSmall} />
         </div>
       </section>
-      <section className="px-5  my-5">
+      <section className="px-5  my-5" id="top-category">
         <div className="text-center trending_categories">
           <MyBadge name="Trending Categories" />
           <h4 className="my-2">Top Category Available</h4>
