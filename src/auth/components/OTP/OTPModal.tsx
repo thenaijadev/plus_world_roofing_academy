@@ -8,9 +8,7 @@ import  {   useState } from "react"
 
 const OTPModal = () => {
   const [otp, setOtp] = useState(new Array(6).fill(''))
-  function handleClose() {
-    setOtp(false)
-  }
+  
   
 
   function handleChange(e: any, index: number) {

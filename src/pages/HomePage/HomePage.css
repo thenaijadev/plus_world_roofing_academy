@@ -262,6 +262,9 @@
   .stay_informed > div > div{
     width: 100% !important;
   }
+  .stay_informed > div > div > img{
+    width: 100%;
+  }
   #emailAddress{
     width: 100% !important;
   }
