@@ -1,3 +1,14 @@
+.message{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
 .loader-container {
     top: 0;
     bottom: 0;
@@ -5,13 +16,23 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    
 }
 
 .spinner {
     width: 64px;
     height: 64px;
     border: 8px solid;
-    border-color: var(--bgbuttons)  transparent var(--bgbuttons)  transparent;
+    border-color: var(--primary-color)  transparent var(--primary-color)  transparent;
     border-radius: 50%;
     animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
