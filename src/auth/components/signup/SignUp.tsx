@@ -10,12 +10,12 @@ import OTPModal from "../OTP/OTPModal";
 
 const Signup = () => {
   const [isOTP, setIsOTP] = useState<boolean>(false);
-  const [signUp, setIsSignUp] = useState<boolean>(true);
+  // const [signUp, setIsSignUp] = useState<boolean>(true);
 
 
   function handleSubmit() {
     setIsOTP(true);
-    setIsSignUp(false)
+    // setIsSignUp(false)
   }
 
   return !isOTP ? (
