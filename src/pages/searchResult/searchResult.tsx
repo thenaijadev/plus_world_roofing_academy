@@ -3,7 +3,6 @@ import axios from "axios"
 import { useLocation } from "react-router-dom";
 import { GlobalContext } from '../../GlobalProvider';
 import "./searchResult.css"
-import { defineConfig } from 'vite';
 
 
 
@@ -26,7 +25,6 @@ const SearchResult = () => {
                 const response = await axios.post(`${import.meta.env.VITE_APP_API_URL}/api/search`, {
                   searchTerm,
                 });
-          
                setSearchResult(response.data.result);
                 console.log(response)
                 setShouldSearch(false)
@@ -39,7 +37,6 @@ const SearchResult = () => {
               setIsLoading(false)
             }
           }
-
           handleSearch()
       }, [shouldSearch])  
 
