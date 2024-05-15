@@ -158,9 +158,6 @@
   .hero_description h1, .hero_description h1 > span{
     font-size: 2rem !important;
   }
-  .hero{
-    text-align: center;
-  }
 
   div > a > p, div>p{
     font-size: 0.8rem !important;
@@ -194,6 +191,15 @@
   }
   br{
     display: none !important;
+  }
+  
+  .hero{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .hero_description{
     width: 100% !important;

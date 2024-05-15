@@ -9,7 +9,7 @@ export function SwiperNavButtons() {
   const front = <ArrowForwardCircular />;
   return (
     <div className="swiper-buttons">
-      <button className="custom-prev-btn" onClick={() => swipernav.slideNext()}>
+      <button className="custom-prev-btn" onClick={() => swipernav.slidePrev()}>
         {back}
       </button>
       <button className="custom-next-btn" onClick={() => swipernav.slidePrev()}>

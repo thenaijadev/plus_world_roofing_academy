@@ -16,7 +16,7 @@ const ComingSoon = (props: Props) => {
       setSecondsRemaining(prevSeconds => Math.max(0, prevSeconds - 1)); 
 
       if (secondsRemaining === 0 && location.pathname !== props.redirectPath) {
-        window.location.href = props.redirectPath;
+        window.location.pathname = props.redirectPath;
       }
     }, 1000);
 

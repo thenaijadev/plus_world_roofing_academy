@@ -35,6 +35,7 @@ input {
 @media screen and (max-width: 427px) {
   .nav{
     padding-inline: 1rem !important;
+    padding-block: 1.5rem !important;
   }
   
   .nav-mobile > div{

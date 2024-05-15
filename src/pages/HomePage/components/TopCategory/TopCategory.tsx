@@ -17,13 +17,16 @@ function TopCategory() {
   }
 
   function card(props: TopCategoryDataTypes) {
-    const { id,img, type, amount, link } = props;
+    const { id, img, type, amount, link } = props;
+    
     return (
       <SwiperSlide key={id}>
         <div className="top_category px-4 text-center d-flex flex-column align-items-center">
-          <div className="category_icon d-flex  align-items-center justify-content-center rounded-circle mb-1">
-            <img src={img} alt="real estate office" />
-          </div>
+          <NavLink to={link}>
+            <div className="category_icon d-flex  align-items-center justify-content-center rounded-circle mb-1">
+              <img src={img} alt="real estate office" />
+            </div>
+          </NavLink>
           <NavLink className='text-black text-decoration-none' to={link}>
             <p className="mb-0 fw-bold">{type}</p>
           </NavLink>
