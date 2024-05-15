@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { GlobalContext } from "../../GlobalProvider";
 import {
   Facebook,
   Instagram,
@@ -10,6 +12,15 @@ import SocialIcon from "../SocialIcon/SocialIcon";
 import "./Footer.css";
 
 const Footer = () => {
+  const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
+
+  function handleTutorForm() {
+    if (tutorFormDisplay) {
+      setTutorFormDisplay(false);
+    } else {
+      setTutorFormDisplay(true);
+    }
+  }
   return (
     <footer className="footer ">
       <div className="py-2">
@@ -54,7 +65,7 @@ const Footer = () => {
               <hr />
               <ul className="ps-0">
                 <li className="mb-2 fw-medium">Contact Us</li>
-                <li className="mb-2 fw-medium">Be a Tutor</li>
+                <li className="mb-2 fw-medium" onClick={handleTutorForm}>Be a Tutor</li>
                 <li className="fw-medium">Careers</li>
               </ul>
             </div>
