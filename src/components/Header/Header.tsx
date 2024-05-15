@@ -13,16 +13,30 @@ import {
 import { GlobalContext } from "../../GlobalProvider";
 import MyButton from "../MyButton/MyButton";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Header = () => {
+  const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
   const { setTutorFormDisplay, tutorFormDisplay } = useContext(GlobalContext);
   const { setLoginFormDisplay, loginFormDisplay } = useContext(GlobalContext);
+  const { setShouldSearch} = useContext(GlobalContext);
+
 
   const [isOpen, setIsOpen] = useState(false);
 
   const showNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+
+  async function handleSearch (e: any) {
+    e.preventDefault()
+  
+        navigate(`/search?q=${searchTerm}`);
+        setShouldSearch(true)
+  }
 
   function handleTutorForm() {
     if (tutorFormDisplay) {
@@ -77,9 +91,12 @@ const Header = () => {
                 <p className="mb-0">Category</p>
                 <img src={ArrowDown} alt="down arrow" />
               </div>
-              <Input placeholder="Search For Course, teachers" />
+              <Input 
+              onChange={(e) => {
+            setSearchTerm(e.target.value)}} 
+            placeholder="Search For Course, teachers" />
               <div className="badge_icon p-2 rounded-circle d-flex align-items-center justify-content-center border-black border">
-                <img src={SearchIcon} alt="favourite icon" />
+                <img onClick={handleSearch} src={SearchIcon} alt="favourite icon" />
               </div>
             </div>
             <p className="fw-bold mb-0 tutor-button" onClick={handleTutorForm}>

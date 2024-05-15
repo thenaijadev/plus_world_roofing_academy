@@ -42,6 +42,7 @@ import Testimonial from "./components/Testimonials/Testimonials";
 import TopCategory from "./components/TopCategory/TopCategory";
 import "./HomePage.css";
 
+
 const HomePage = () => {
   const { tutorFormDisplay } = useContext(GlobalContext);
   const { loginFormDisplay } = useContext(GlobalContext);

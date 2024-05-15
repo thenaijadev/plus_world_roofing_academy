@@ -1,0 +1,17 @@
+.loader-container {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: var(--bgbuttons)  transparent var(--bgbuttons)  transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}

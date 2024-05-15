@@ -5,6 +5,7 @@ import Course from "../pages/Courses/Course";
 import HomePage from "../pages/HomePage/HomePage";
 // import Login from "../pages/login/login";
 import ComingSoon from "../pages/ComingSoon/ComingSoon";
+import SearchResult from "../pages/searchResult/searchResult";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
       { path: "", element: <HomePage /> },
       { path: "courses", element: <Course /> },
       { path: "contact", element: <Contact /> },
+      {path: "search", element: <SearchResult/>},
       // { path: "login", element: <Login /> },
       { path: "coming-soon", element: <ComingSoon redirectPath="/" /> },
     ],
